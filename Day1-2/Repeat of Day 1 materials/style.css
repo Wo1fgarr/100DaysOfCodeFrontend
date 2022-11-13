@@ -1,5 +1,5 @@
 body {
-  outline: 2px solid blue;
+  outline: 2px dotted blue;
   padding: 1px 10px 3px 10px
 }
 pre {
@@ -7,22 +7,22 @@ pre {
   font-weight: bold;
 }
 header {
-  outline: 2px solid orange;
+  outline: 2px dotted orange;
   padding: 5px;
   margin-bottom: 10px;
 }
 h1, h2, h3 {
-  outline: 2px solid black;
+  outline: 2px dotted black;
   margin-left: 10px;
   margin-right: 10px;
 }
 main {
-  outline: 2px solid red;
+  outline: 2px dotted red;
   padding: 5px;
   margin-bottom: 10px;
 }
 nav {
-  outline: 2px solid purple;
+  outline: 2px dotted purple;
 }
 ul {
   list-style: none;
@@ -32,7 +32,7 @@ li {
   margin-right: 10px;
 }
 section, aside, p {
-  outline: 2px solid purple;
+  outline: 2px dotted purple;
 }
 section {
   padding-bottom: 1px;
@@ -45,7 +45,7 @@ p{
   margin-right: 10px;
 }
 footer {
-  outline: 2px solid darkgray;
+  outline: 2px dotted darkgray;
   margin-bottom: 10px;
   padding-bottom: 1px;
 }

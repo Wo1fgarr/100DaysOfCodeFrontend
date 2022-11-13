@@ -10,9 +10,11 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 ![Tomatoes finished](https://i.ibb.co/wWwRmVn/2022-11-12-161427.png)  
 
 **Day 2: HTML**
-* [x] Practice: Revise the materials of Day 1 - HTML page structure
+* [x] Practice: Revise the materials of Day 1 - HTML page structure with small part of CSS
 * [x] HTML elements
 * [x] Nesting HTML elements
+![Tomatoes finished](./src/img/2022-11-13.png)  
+
 * [ ] Semantic markup
 * [ ] Links / multiple pages
 * [ ] Images
