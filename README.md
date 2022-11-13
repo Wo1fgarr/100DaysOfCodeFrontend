@@ -7,12 +7,12 @@ Hi. Here I am and my dive into frontend development. I hope to finish this story
 **Day 1: HTML**  
 I have an approximate curriculum based on [Nick Scully's curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2), which will probably change a lot in the process. So far, for the next 8 days, it looks like this:
 * [x] HTML page structure  
-![Tomatoes finished](https://i.ibb.co/wWwRmVn/2022-11-12-161427.png)  
+![Tomatoes finished](./src/img/2022-11-12.png)  
 ---
 **Day 2: HTML**
 * [x] Practice: Revise the materials of Day 1 - HTML page structure with small part of CSS
 * [x] HTML elements
-* [x] Nesting HTML elements
+* [x] Nesting HTML elements  
 ![Tomatoes finished](./src/img/2022-11-13.png)   
 ---
 * [ ] Semantic markup
