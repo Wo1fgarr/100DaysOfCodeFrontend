@@ -11,8 +11,8 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 
 **Day 2: HTML**
 * [x] Practice: Revise the materials of Day 1 - HTML page structure
-* [ ] HTML elements
-* [ ] Nesting HTML elements
+* [x] HTML elements
+* [x] Nesting HTML elements
 * [ ] Semantic markup
 * [ ] Links / multiple pages
 * [ ] Images
