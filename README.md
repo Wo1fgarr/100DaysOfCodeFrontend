@@ -17,7 +17,7 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 ---
 **Day 3: HTML**
 * [x] Semantic markup
-* [x] Links / multiple pages
+* [x] Links / multiple pages  
 ![Tomatoes finished](./src/img/2022-11-14.png)
 ---
 * [ ] Images
