@@ -15,9 +15,13 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 * [x] Nesting HTML elements  
 ![Tomatoes finished](./src/img/2022-11-13.png)   
 ---
-* [ ] Semantic markup
-* [ ] Links / multiple pages
+**Day 3: HTML**
+* [x] Semantic markup
+* [x] Links / multiple pages
+![Tomatoes finished](./src/img/2022-11-14.png)
+---
 * [ ] Images
 * [ ] Audio/video media
 * [ ] Forms and form elements
   * [ ] And at this point, based on what I studied above, I will create my own website
+  * [ ] Check result in W3C validator
