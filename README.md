@@ -23,7 +23,7 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 **Day 4: HTML**
 * [x] Images
 * [x] Tables 
-* [x] Practice: Semantic Layout and Multipage site
+* [x] Practice: Semantic Layout and Multipage site  
 ![Tomatoes finished](./src/img/2022-11-14.png)   
 ---
 * [ ] Audio/video media
