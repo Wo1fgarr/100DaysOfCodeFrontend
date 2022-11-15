@@ -20,7 +20,12 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 * [x] Links / multiple pages  
 ![Tomatoes finished](./src/img/2022-11-14.png)
 ---
-* [ ] Images
+**Day 4: HTML**
+* [x] Images
+* [x] Tables 
+* [x] Practice: Semantic Layout and Multipage site
+![Tomatoes finished](./src/img/2022-11-14.png)   
+---
 * [ ] Audio/video media
 * [ ] Forms and form elements
   * [ ] And at this point, based on what I studied above, I will create my own website
