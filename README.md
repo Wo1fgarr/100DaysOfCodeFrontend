@@ -27,7 +27,7 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 ![Tomatoes finished](./src/img/2022-11-15.png)   
 ---
 **Day 5: HTML**
-* [x] img: loading, decoding atributes
+* [x] img: loading, decoding attributes
 * [x] Audio/video media  
 ![Tomatoes finished](./src/img/2022-11-16.png)  
 ---
