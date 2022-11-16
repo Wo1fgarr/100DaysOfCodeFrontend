@@ -26,7 +26,11 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 * [x] Practice: Semantic Layout and Multipage site  
 ![Tomatoes finished](./src/img/2022-11-15.png)   
 ---
-* [ ] Audio/video media
+**Day 5: HTML**
+* [x] img: loading, decoding atributes
+* [x] Audio/video media  
+![Tomatoes finished](./src/img/2022-11-16.png)  
+---
 * [ ] Forms and form elements
   * [ ] And at this point, based on what I studied above, I will create my own website
   * [ ] Check result in W3C validator
