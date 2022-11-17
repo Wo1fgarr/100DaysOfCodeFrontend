@@ -31,6 +31,9 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 * [x] Audio/video media  
 ![Tomatoes finished](./src/img/2022-11-16.png)  
 ---
-* [ ] Forms and form elements
+**Day 6: HTML**
+* [x] Forms and form elements  
+![Tomatoes finished](./src/img/2022-11-16.png)  
+---
   * [ ] And at this point, based on what I studied above, I will create my own website
   * [ ] Check result in W3C validator
