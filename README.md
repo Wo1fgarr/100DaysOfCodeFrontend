@@ -11,10 +11,10 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 
 | Days | Description | Done | Tomatoes |
 | --- | --- | --- | --- |
-| Day 1 | HTML page structure  | &#9745; | ![Tomatoes finished](./src/img/2022-11-12.png) |
-| Day 2 | Practice: Revise the materials of Day 1 - HTML page structure with small part of CSS<br />HTML elements<br />Nesting HTML elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-13.png) |
-| Day 3 | Semantic markup<br />Links / multiple pages | &#9745; | ![Tomatoes finished](./src/img/2022-11-14.png) |
-| Day 4 | Images<br />Tables<br />Practice: Semantic Layout and Multipage site| &#9745; | ![Tomatoes finished](./src/img/2022-11-15.png) |
-| Day 5 | img: loading, decoding attributes<br />Audio/video media | &#9745; | ![Tomatoes finished](./src/img/2022-11-16.png)  |
-| Day 6 | Forms and form elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-17.png)  |
-| Day 7 | Create markdown table(for GitHub readme.md in repository)<br />Try use HTML templating engine<br />And at this point, based on what I studied above, I will create my own website<br />Check result in W3C validator | &#9744; | --- |
+| 1 | HTML page structure  | &#9745; | ![Tomatoes finished](./src/img/2022-11-12.png) |
+| 2 | Practice: Revise the materials of Day 1 - HTML page structure with small part of CSS<br />HTML elements<br />Nesting HTML elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-13.png) |
+| 3 | Semantic markup<br />Links / multiple pages | &#9745; | ![Tomatoes finished](./src/img/2022-11-14.png) |
+| 4 | Images<br />Tables<br />Practice: Semantic Layout and Multipage site| &#9745; | ![Tomatoes finished](./src/img/2022-11-15.png) |
+| 5 | img: loading, decoding attributes<br />Audio/video media | &#9745; | ![Tomatoes finished](./src/img/2022-11-16.png)  |
+| 6 | Forms and form elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-17.png)  |
+| 7 | Create markdown table(for GitHub readme.md in repository)<br />Try use HTML templating engine<br />And at this point, based on what I studied above, I will create my own website<br />Check result in W3C validator | &#9744; | --- |
