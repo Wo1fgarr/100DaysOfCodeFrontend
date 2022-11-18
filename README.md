@@ -17,4 +17,5 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 4 | Images<br />Tables<br />Practice: Semantic Layout and Multipage site| &#9745; | ![Tomatoes finished](./src/img/2022-11-15.png) |
 | 5 | img: loading, decoding attributes<br />Audio/video media | &#9745; | ![Tomatoes finished](./src/img/2022-11-16.png)  |
 | 6 | Forms and form elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-17.png)  |
-| 7 | Create markdown table(for GitHub readme.md in repository)<br />Try use HTML templating engine<br />And at this point, based on what I studied above, I will create my own website<br />Check result in W3C validator | &#9744; | --- |
+| 7 | Create markdown table(for GitHub readme.md in repository)<br />Try to use PUG.js | &#9745; | ![Tomatoes finished](./src/img/2022-11-18.png) |
+| 8 | And at this point, based on what I studied above, I will create my own website<br />Check result in W3C validator  | &#9744; | --- |
