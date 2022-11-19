@@ -1,11 +1,11 @@
 block headerVars 
-  - let navDefaultItem = "#";
-  - let navItem = "./learnHTML.html";
+  - let mainHeadingTitle = "Main Page";
+  - let navMainPage = "#";
+  - let navLearnHtml = "./learnHTML.html";
 
 
 header This is header 
-  h1 Main Page 
+  h1 #{mainHeadingTitle} 
   nav 
-    a(href=navDefaultItem) Main Page
-    a(href=navItem) Learn HTML
-    block headerContent
+    a(href=navMainPage) Main Page
+    a(href=navLearnHtml) Learn HTML
