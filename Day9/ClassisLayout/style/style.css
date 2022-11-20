@@ -58,3 +58,7 @@ blockquote {
 .wrap-label {
   display: block;
 }
+#html-logo {
+  display: block;
+  margin-left: 2%;
+}
