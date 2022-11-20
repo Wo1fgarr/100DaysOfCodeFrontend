@@ -10,7 +10,7 @@ header {
   margin-bottom: 10px;
 }
 nav {
-    text-align: center;
+    margin-left: 2%;
 }
 nav a{
     text-decoration: none;
@@ -54,4 +54,7 @@ thead, tfoot {
 }
 blockquote {
     width: 50%;
+}
+.wrap-label {
+  display: block;
 }
