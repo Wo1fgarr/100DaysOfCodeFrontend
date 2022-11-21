@@ -20,3 +20,11 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 7 | Create markdown table(for GitHub readme.md in repository)<br />Try to use PUG.js | &#9745; | ![Tomatoes finished](./src/img/2022-11-18.png) |
 | 8 | More PUG practice  | &#9745; | ![Tomatoes finished](./src/img/2022-11-19_notebook.png) |
 | 9 | And at this point, based on what I studied above, I will create my own website<br />Check result in W3C validator  | &#9745; | ![Tomatoes finished](./src/img/2022-11-20.png) |
+
+---
+
+## CSS
+
+| Days | Description | Done | Tomatoes |
+| --- | --- | --- | --- |
+| 10 | Basic CSS, CSS flexbox, and CSS grid   | &#9744; | --- |
