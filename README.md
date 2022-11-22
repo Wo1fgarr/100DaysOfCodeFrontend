@@ -28,4 +28,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | Days | Description | Done | Tomatoes |
 | --- | --- | --- | --- |
 | 10 | Basic CSS, inherit selector, non-inherit selector<br />Training in the online editor | &#9745; | ![Tomatoes finished](./src/img/2022-11-21.png) |
-| 11 | Basic CSS - refinement of the site from a block of HTML<br />Now this site is Multipage<br />Enter to Block layout, fonts and background-image | &#9745; | ![Tomatoes finished](./src/img/2022-11-22.png) |
+| 11 | Basic CSS - refinement of the site from a block of HTML<br />Now this site is Multipage<br />Started to learn block layout, fonts and background images | &#9745; | ![Tomatoes finished](./src/img/2022-11-22.png) |
