@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <header class="container">
+        <h1>Learning Progress</h1>
+        <nav>
+            <a href="./index.html">Main Page</a>
+            <a href="./AboutHTML.html">Learning HTML</a>
+            <a href="./AboutStyle.html">Learning CSS</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="intro">
+            <h2>Greating</h2>
+            <p>Hi! It's my website. And here I write my learning progress</p>
+            <figure>
+                <figcaption>Here's some ambient by <a href="https://freemusicarchive.org/music/lorenzo-woodard/">Lorenzo Woodard</a> for the right mood</figcaption>
+                <audio controls>
+                    <source src="./src/Lorenzo_Woodard_Voyage.mp3" type="audio/mp3">
+                </audio>
+            </figure>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <dl class="skills">
+              <dt>HTML</dt>
+              <dd><div class="skills-level">30%</div></dd>
+              <dt>CSS</dt>
+              <dd><div class="skills-level">5%</div></dd>
+              <dt>JS</dt>
+              <dd><div class="skills-level">0%</div></dd>
+            </dl>
+        </section>
+        <section id="motivation">
+            <h2>Moment of motivation</h2>
+            <figure>
+                <figcaption>A cat in gloves catches no mice.</figcaption>
+                <video controls width="250">
+                    <source src="./src/Vidfy_freevideo.webm" type="video/webm">
+                </video>
+            </figure>
+        </section>
+        <section id="feedback-form">
+            <h2>Feedback</h2>
+            <form action="#" method="post" name="feedback-form">
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="first name">
+                </div>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="last name">
+                </div>
+                <div>
+                    <textarea name="message" id="feedback-message" cols="50" rows="10">Write here your message</textarea>
+                </div>
+                <div>
+                    <label for="consent-checkbox">Сonsent to the transfer of data to third parties</label>
+                    <input type="checkbox" name="consent-checkbox" id="consent-checkbox">
+                </div>
+                <div>
+                    <input type="submit" class="wrap-label" value="Send">
+                </div>                
+            </form>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div>
+            <a href="./index.html">Main Page</a>
+            <a href="./AboutHTML.html">Learning HTML</a>
+            <a href="./AboutStyle.html">Learning CSS</a>
+        </div>
+        &#169;All rights reserved
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Muller Regular";
+  src: url("../fonts/MullerRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller Bold";
+  src: url("../fonts/MullerBold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muller Regular";
+  background-image: url('../src/Wave.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 590px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:not(:first-child) {
+   margin-left: 30px;
+}
+
+/*! Main */
+table, td {
+  border: 1px solid #333;
+}
+
+thead, tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+.wrap-label {
+  display: block;
+}
+#code-logo {
+  display: block;
+  margin-left: 2%;
+}
+
+.skills-level {
+  width: 50%;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4470c4;
+}
