@@ -18,10 +18,11 @@
 
 body {
   font-family: "Muller Regular";
-  background-image: url('../src/Wave.png');
+  background-color: rgb(121, 117, 117);
+  /* background-image: url('../src/Wave.png');
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-bottom: 590px;
+  padding-bottom: 590px; */
 }
 
 a {
@@ -40,6 +41,13 @@ ul {
   padding: 0 15px;
 }
 
+.section-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 3px solid red;
+  background-color: #fff;
+}
+
 /*! Header*/
 .header-container {
   display: flex;
@@ -47,6 +55,7 @@ ul {
   align-items: center;
   height: 100%;
   outline: 3px solid red;
+  background-color: #fff;
 }
 
 .header-heading {
@@ -65,34 +74,13 @@ nav a:not(:first-child) {
   margin-left: 30px;
 }
 
-/*! Footer */
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  outline: 3px solid red;
-}
-
-.footer-menu {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 /*! Main page - main */
+
+
 /*! section intro */
-.intro-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  outline: 3px solid red;
-}
+
 
 /*! section skills */
-.skills-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  outline: 3px solid red;
-}
 
 .skills-level {
   width: 50%;
@@ -118,6 +106,21 @@ thead, tfoot {
 #code-logo {
   display: block;
   margin-left: 2%;
+}
+
+/*! Footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  outline: 3px solid red;
+  background-color: #fff;
+}
+
+.footer-menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
