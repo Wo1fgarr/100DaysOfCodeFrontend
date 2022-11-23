@@ -40,6 +40,23 @@ ul {
   padding: 0 15px;
 }
 
+/*! Header*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  outline: 3px solid red;
+}
+
+.header-heading {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+}
+
 nav a{
   text-decoration: none;
 }
@@ -48,7 +65,44 @@ nav a:not(:first-child) {
   margin-left: 30px;
 }
 
-/*! Main */
+/*! Footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  outline: 3px solid red;
+}
+
+.footer-menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*! Main page - main */
+/*! section intro */
+.intro-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 3px solid red;
+}
+
+/*! section skills */
+.skills-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 3px solid red;
+}
+
+.skills-level {
+  width: 50%;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4470c4;
+}
+
+/*! Learning Pages*/
 table, td {
   border: 1px solid #333;
 }
@@ -66,10 +120,4 @@ thead, tfoot {
   margin-left: 2%;
 }
 
-.skills-level {
-  width: 50%;
-  font-size: 12px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #4470c4;
-}
+

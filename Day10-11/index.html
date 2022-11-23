@@ -8,36 +8,46 @@
     <title>Main Page</title>
 </head>
 <body>
-    <header class="container">
-        <h1>Learning Progress</h1>
-        <nav>
-            <a href="./index.html">Main Page</a>
-            <a href="./AboutHTML.html">Learning HTML</a>
-            <a href="./AboutStyle.html">Learning CSS</a>
-        </nav>
+    <header>
+        <div class="container header-container">
+            <h1 class="header-heading">Learning Progress</h1>
+            <nav class="nav-list">
+                <a href="./index.html">Main Page</a>
+                <a href="./AboutHTML.html">Learning HTML</a>
+                <a href="./AboutStyle.html">Learning CSS</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="container">
-        <section id="intro">
-            <h2>Greating</h2>
-            <p>Hi! It's my website. And here I write my learning progress</p>
-            <figure>
-                <figcaption>Here's some ambient by <a href="https://freemusicarchive.org/music/lorenzo-woodard/">Lorenzo Woodard</a> for the right mood</figcaption>
-                <audio controls>
-                    <source src="./src/Lorenzo_Woodard_Voyage.mp3" type="audio/mp3">
-                </audio>
-            </figure>
-        </section>
+    <main>
         <section>
-            <h2>Skills</h2>
-            <dl class="skills">
-              <dt>HTML</dt>
-              <dd><div class="skills-level">30%</div></dd>
-              <dt>CSS</dt>
-              <dd><div class="skills-level">5%</div></dd>
-              <dt>JS</dt>
-              <dd><div class="skills-level">0%</div></dd>
-            </dl>
+            <div class="container intro-container">
+                <h2>Greating</h2>
+                <p>Hi! It's my website. And here I write my learning progress</p>
+                <figure>
+                    <figcaption>Here's some ambient by <a href="https://freemusicarchive.org/music/lorenzo-woodard/">Lorenzo Woodard</a> for the right mood</figcaption>
+                    <audio controls>
+                        <source src="./src/Lorenzo_Woodard_Voyage.mp3" type="audio/mp3">
+                    </audio>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div class="container skills-container">
+                <h2>Skills</h2>
+                <p>Here is an approximate progress bar of the material passed. Now the data is rather presumptuous, but I will fix it.</p>
+                <p>The key to my training and this site in particular is to dive into web technology. The results of the dive will affect the quality of this site, sites and applications created in the future.</p>
+                <p>I studied different ways of layout (I'm not sure about the correct terminology)  and I decided to redo the layout of this site on flexbox</p>           
+                <dl class="skills">
+                  <dt>HTML</dt>
+                  <dd><div class="skills-level">30%</div></dd>
+                  <dt>CSS</dt>
+                  <dd><div class="skills-level">5%</div></dd>
+                  <dt>JS</dt>
+                  <dd><div class="skills-level">0%</div></dd>
+                </dl>
+            </div>
         </section>
         <section id="motivation">
             <h2>Moment of motivation</h2>
@@ -73,13 +83,15 @@
         </section>
     </main>
 
-    <footer class="container">
-        <div>
-            <a href="./index.html">Main Page</a>
-            <a href="./AboutHTML.html">Learning HTML</a>
-            <a href="./AboutStyle.html">Learning CSS</a>
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-menu">
+                <a href="./index.html">Main Page</a>
+                <a href="./AboutHTML.html">Learning HTML</a>
+                <a href="./AboutStyle.html">Learning CSS</a>
+            </div>
+            &#169;All rights reserved
         </div>
-        &#169;All rights reserved
     </footer>
 </body>
 </html>
