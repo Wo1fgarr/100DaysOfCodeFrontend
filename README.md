@@ -29,4 +29,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | --- | --- | --- | --- |
 | 10 | Basic CSS, inherit selector, non-inherit selector<br />Training in the online editor | &#9745; | ![Tomatoes finished](./src/img/2022-11-21.png) |
 | 11 | Basic CSS - refinement of the site from a block of HTML<br />Now this site is Multipage<br />Started to learn block layout, fonts and background images | &#9745; | ![Tomatoes finished](./src/img/2022-11-22.png) |
-| 12 | Basic CSS<br />Hello fluxbox, I choose you (I know that this is clearly not basic CSS, but this technology seemed to me the best for the layout of the site right now) |  &#9744; | --- |
+| 12 | Basic CSS<br />Hello flexbox, I choose you (I know that this is clearly not basic CSS, but this technology seemed to me the best for the layout of the site right now)<br />Hi Emmet |  &#9745; | ![Tomatoes finished](./src/img/2022-11-23.png) |
