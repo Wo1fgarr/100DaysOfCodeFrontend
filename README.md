@@ -30,3 +30,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 10 | Basic CSS, inherit selector, non-inherit selector<br />Training in the online editor | &#9745; | ![Tomatoes finished](./src/img/2022-11-21.png) |
 | 11 | Basic CSS - refinement of the site from a block of HTML<br />Now this site is Multipage<br />Started to learn block layout, fonts and background images | &#9745; | ![Tomatoes finished](./src/img/2022-11-22.png) |
 | 12 | Basic CSS<br />Hello flexbox, I choose you (I know that this is clearly not basic CSS, but this technology seemed to me the best for the layout of the site right now)<br />Hi Emmet |  &#9745; | ![Tomatoes finished](./src/img/2022-11-23.png) |
+| 13 | Practice in the online editor with base selectors, pseudo-classes<br />Diving into advanced selectors that can search for elements by substring in attributes<br />Selectors for styling form elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-24.png) |
