@@ -1,0 +1,104 @@
+body {
+    background-color:azure;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section {
+    margin-bottom: 50px;
+    border: 2px solid purple;
+    padding: 10px;
+}
+
+p {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid orange;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0000ff; 
+}
+
+/*! :first-child, :last-child, :nth-child */
+.selector-1 li {
+    width: 300px;
+}
+
+.selector-1 li:first-child, .selector-1 li:last-child {
+    background-color: red;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px dotted #000;
+    color: #fff;
+}
+
+.selector-1 li:nth-child(even) {
+    padding: 15px;
+    font-size: 55px;
+    color: green;
+}
+
+.selector-1 li:nth-child(1) {
+    writing-mode: vertical-lr;
+}
+
+.selector-1 li:nth-child(3) {
+    padding: 10px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-align: center;
+    background-color: yellow;
+}
+
+.selector-1 li:nth-child(4) {
+    text-align: right;
+    letter-spacing: 10px;
+}
+
+/*! :hover :not */
+.selector-2 dt {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.selector-2 dd:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.selector-2 dd:nth-child(even):hover::after {
+    font-size: 25px;
+    color: green;
+    content: " - YES! Good job!";
+}
+
+.selector-2 dd:last-child:hover::after {
+    font-size: 25px;
+    color: red;
+    content: " - NO!";
+}
+
+.submenu {
+    padding-left: 10px;
+}
+
+.selector-3 .top .submenu {
+    display: none;
+}
+  
+.selector-3 .top:hover .submenu {
+    display: block;
+}
+
+/*! attribute selectors */
+.reactions {
+    visibility: collapse;
+}
+
+input:checked + label {
+    visibility: visible;
+}

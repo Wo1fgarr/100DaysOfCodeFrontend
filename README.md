@@ -31,3 +31,6 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 11 | Basic CSS - refinement of the site from a block of HTML<br />Now this site is Multipage<br />Started to learn block layout, fonts and background images | &#9745; | ![Tomatoes finished](./src/img/2022-11-22.png) |
 | 12 | Basic CSS<br />Hello flexbox, I choose you (I know that this is clearly not basic CSS, but this technology seemed to me the best for the layout of the site right now)<br />Hi Emmet |  &#9745; | ![Tomatoes finished](./src/img/2022-11-23.png) |
 | 13 | Practice in the online editor with base selectors, pseudo-classes<br />Diving into advanced selectors that can search for elements by substring in attributes<br />Selectors for styling form elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-24.png) |
+| 14 | Selectors and pseudo-classes:<br />:first-child, :last-child, :nth-child<br />:hover :not ::after :checked| &#9745; | ![Tomatoes finished](./src/img/2022-11-25.png) |
+| 15 | Selectors<br />Floats, clearning floats<br />Layouts (grid, flexbox) | &#9744; | --- |
+| 16 | End of styling the HTML page(s) I made when learning HTML! | &#9744; | --- |

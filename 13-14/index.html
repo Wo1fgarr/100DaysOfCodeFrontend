@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <p>:first-child, :last-child, :nth-child</p>
+        <ul class="selector-1">
+            <li>Red</li>
+            <li>Green</li>
+            <li>Yellow</li>
+            <li>Green</li>
+            <li>Red</li>
+        </ul>
+    </section>
+
+    <section>
+        <p>:hover :not ::after - choose your answer</p>
+        <dl class="selector-2">
+            <dt>HTML is..?</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dd>Hello Tom Marry Robert</dd>
+        </dl>
+    </section>
+
+    <section>
+        <p>:hover - drop-down menu</p>
+        <ul class="selector-3">
+            <li class="top">Choose your hero:
+                <ul class="submenu">
+                    <li>Onepunchman</li>
+                    <li>Superman</li>
+                    <li>Batman</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <p>attribute selectors</p>
+        <form action="#" method="post">
+            Do you like CSS?
+            <input type="checkbox" name="" id="ccs-questions" checked>
+            <label for="ccs-questions" class="reactions">
+                <img src="./src/3746927.png" alt="smiling emoji" width="30">
+            </label>
+        </form>
+    </section>
+</body>
+</html>
