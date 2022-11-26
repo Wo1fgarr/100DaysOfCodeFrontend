@@ -32,6 +32,6 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 12 | Basic CSS<br />Hello flexbox, I choose you (I know that this is clearly not basic CSS, but this technology seemed to me the best for the layout of the site right now)<br />Hi Emmet |  &#9745; | ![Tomatoes finished](./src/img/2022-11-23.png) |
 | 13 | Practice in the online editor with base selectors, pseudo-classes<br />Diving into advanced selectors that can search for elements by substring in attributes<br />Selectors for styling form elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-24.png) |
 | 14 | Selectors and pseudo-classes:<br />:first-child, :last-child, :nth-child<br />:hover, :not, ::after, :checked| &#9745; | ![Tomatoes finished](./src/img/2022-11-25.png) |
-| 15 | Selectors and pseudo-classes:<br />:first-of-type, Subsequent Item Selector, :empty<br />::first-line, ::first-letter, [foo^="bar"], [foo$="bar"] | &#9745; | ![Tomatoes finished](./src/img/2022-11-25.png) |
+| 15 | Selectors and pseudo-classes:<br />:first-of-type, Subsequent Item Selector, :empty<br />::first-line, ::first-letter, [foo^="bar"], [foo$="bar"] | &#9745; | ![Tomatoes finished](./src/img/2022-11-26.png) |
 | 16 | Selectors<br />Floats, clearning floats<br />Layouts (grid, flexbox) | &#9744; | --- |
 | 17 | End of styling the HTML page(s) I made when learning HTML! | &#9744; | --- |
