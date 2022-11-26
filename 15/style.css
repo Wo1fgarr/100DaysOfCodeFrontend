@@ -106,7 +106,92 @@ input:checked + label {
 
 /*! Day15 */
 /*! :first-of-type */
-.selector-4 + ul:first-of-type {
+.selector-4 li:first-of-type {
     font-size: 25;
     color:blueviolet;
+}
+
+.selector-4 li:last-of-type:not(li:nth-child(1)) {
+    font-weight: bold;
+    color:cadetblue;
+}
+
+/*! Subsequent Item Selector: 
+/*!    "+" - select one subsequent item 
+/*!    and 
+/*!    "~" - select all subsequent items */
+.queen.heart + li {
+    background-color: #ffff99;
+}
+
+.selector-5 ul:last-child .king.diamond ~ li {
+    background-color: #99ddff;
+}
+
+/*! :empty */
+.selector-6 ul {
+    width: 100px;
+    border: 1px solid #000;
+}
+
+.selector-6 ul:empty::after{
+    font-size: 20px;
+    color: crimson;
+    content: "Is empty";
+}
+
+/*! ::first-line ::first-letter */
+.selector-7 pre {
+    width: auto;
+}
+
+.selector-7 pre::first-letter {
+    font: italic 1.2em "Fira Sans", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.selector-7 pre::first-line {
+    text-transform: uppercase;
+}
+
+/*! [foo^="bar"] - select elements by the occurrence of a substring in the attribute value */
+.selector-8 div:not(:first-child) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+[class^="message-"] {
+    border: 2px rgb(63, 153, 51) solid;
+    height: 100px;
+}
+
+.message-1 {
+    width: 100px;
+}
+
+.message-2 {
+    width: 200px;
+}
+
+.message-3 {
+    width: 300px;
+}
+
+/*! [foo$="bar"] -  selects all elements whose foo attribute value ends with bar. */
+.select-your-hero a {
+    display: block;
+}
+
+.select-your-hero img {
+    display: none;
+}
+
+.select-your-hero a[href$=".pdf"] .pdf-icon {
+    display: block;
+}
+
+.select-your-hero a[href$=".doc"] .docx-icon {
+    display: block;
 }

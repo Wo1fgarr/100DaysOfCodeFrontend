@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <p>:first-child, :last-child, :nth-child</p>
+        <ul class="selector-1">
+            <li>Red</li>
+            <li>Green</li>
+            <li>Yellow</li>
+            <li>Green</li>
+            <li>Red</li>
+        </ul>
+    </section>
+
+    <section>
+        <p>:hover :not ::after - choose your answer</p>
+        <dl class="selector-2">
+            <dt>HTML is..?</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dd>Hello Tom Merry Robert</dd>
+        </dl>
+    </section>
+
+    <section>
+        <p>:hover - drop-down menu</p>
+        <ul class="selector-3">
+            <li class="top">Choose your hero:
+                <ul class="submenu">
+                    <li>Onepunchman</li>
+                    <li>Superman</li>
+                    <li>Batman</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <p>attribute selectors</p>
+        <form action="#" method="post">
+            Do you like CSS?
+            <input type="checkbox" name="" id="ccs-questions" checked>
+            <label for="ccs-questions" class="reactions">
+                <img src="./src/3746927.png" alt="smiling emoji" width="30">
+            </label>
+        </form>
+    </section>
+
+    <section class="selector-4">
+        <p>:first-of-type :last-of-type</p>
+        <ul>
+            <li>Paint me</li>
+            <li>Another color please!</li>
+        </ul>
+        <ul>
+            <li>Paint me to</li>
+        </ul>
+    </section>
+
+    <section class="selector-5">
+        <p>Subsequent Item Selector:</p>
+        <br>
+        <b>"+" - select one subsequent item</b>
+        <ul class="cards">
+            <li class="king diamond">king diamond</li>
+            <li class="queen heart">queen heart</li>
+            <li class="jack spade">jack spade</li>
+            <li class="ace heart">ace heart</li>
+            <li class="king club">king club</li>
+        </ul>
+        <b>"~" - select all subsequent items</b>
+        <ul class="cards">
+            <li class="king diamond">king diamond</li>
+            <li class="queen heart">queen heart</li>
+            <li class="jack spade">jack spade</li>
+            <li class="ace heart">ace heart</li>
+            <li class="king club">king club</li>
+        </ul>
+    </section>
+
+    <section class="selector-6">
+        <p>:empty</p>
+        <ul></ul>
+        <ul>
+            <li>Some text</li>
+        </ul>
+        <ul></ul>
+    </section>
+
+    <section class="selector-7">
+        <p>::first-line ::first-letter</p>
+        <pre>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Fuga repudiandae iste ipsam recusandae dolore, mollitia ab ipsa ea nihil eos laboriosam voluptatum ad nulla. 
+            Sapiente aspernatur sint amet aut nesciunt!
+        </pre>
+    </section>
+
+    <section class="selector-8">
+        <p>[foo^="bar"] - select elements by the occurrence of a substring in the attribute value</p>
+        <div class="message-1"></div>
+        <div class="message-2"></div>
+        <div class="message-3"></div>
+    </section>
+
+    <section>
+        <p>[foo$="bar"] -  selects all elements whose foo attribute value ends with bar.</p>
+        <div class="select-your-hero">
+            <a href="batman.pdf"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="superman.doc"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="batman.pdf"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="batman.pdf"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="superman.doc"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="superman.doc"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+        </div>
+    </section>
+</body>
+</html>
