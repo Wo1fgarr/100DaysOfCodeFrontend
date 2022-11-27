@@ -33,5 +33,6 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 13 | Practice in the online editor with base selectors, pseudo-classes<br />Diving into advanced selectors that can search for elements by substring in attributes<br />Selectors for styling form elements | &#9745; | ![Tomatoes finished](./src/img/2022-11-24.png) |
 | 14 | Selectors and pseudo-classes:<br />:first-child, :last-child, :nth-child<br />:hover, :not, ::after, :checked| &#9745; | ![Tomatoes finished](./src/img/2022-11-25.png) |
 | 15 | Selectors and pseudo-classes:<br />:first-of-type, Subsequent Item Selector, :empty<br />::first-line, ::first-letter, [foo^="bar"], [foo$="bar"] | &#9745; | ![Tomatoes finished](./src/img/2022-11-26.png) |
-| 16 | Selectors<br />Floats, clearning floats<br />Layouts (grid, flexbox) | &#9744; | --- |
-| 17 | End of styling the HTML page(s) I made when learning HTML! | &#9744; | --- |
+| 16 | Selectors and pseudo-classes:<br />[foo*="bar"], [foo~="bar"], [foo\|="bar"]<br />:enabled, :disabled | &#9745; | ![Tomatoes finished](./src/img/2022-11-27.png) |
+| 17 | Floats, clearning floats<br />Layouts (grid, flexbox) | &#9744; | --- |
+| 18 | End of styling the HTML page(s) I made when learning HTML! | &#9744; | --- |

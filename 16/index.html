@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <p>:first-child, :last-child, :nth-child</p>
+        <ul class="selector-1">
+            <li>Red</li>
+            <li>Green</li>
+            <li>Yellow</li>
+            <li>Green</li>
+            <li>Red</li>
+        </ul>
+    </section>
+
+    <section>
+        <p>:hover :not ::after - choose your answer</p>
+        <dl class="selector-2">
+            <dt>HTML is..?</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dd>Hello Tom Merry Robert</dd>
+        </dl>
+    </section>
+
+    <section>
+        <p>:hover - drop-down menu</p>
+        <ul class="selector-3">
+            <li class="top">Choose your hero:
+                <ul class="submenu">
+                    <li>Onepunchman</li>
+                    <li>Superman</li>
+                    <li>Batman</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <p>attribute selectors</p>
+        <form action="#" method="post">
+            Do you like CSS?
+            <input type="checkbox" name="" id="ccs-questions" checked>
+            <label for="ccs-questions" class="reactions">
+                <img src="./src/3746927.png" alt="smiling emoji" width="30">
+            </label>
+        </form>
+    </section>
+
+    <section class="selector-4">
+        <p>:first-of-type :last-of-type</p>
+        <ul>
+            <li>Paint me</li>
+            <li>Another color please!</li>
+        </ul>
+        <ul>
+            <li>Paint me to</li>
+        </ul>
+    </section>
+
+    <section class="selector-5">
+        <p>Subsequent Item Selector:</p>
+        <br>
+        <b>"+" - select one subsequent item</b>
+        <ul class="cards">
+            <li class="king diamond">king diamond</li>
+            <li class="queen heart">queen heart</li>
+            <li class="jack spade">jack spade</li>
+            <li class="ace heart">ace heart</li>
+            <li class="king club">king club</li>
+        </ul>
+        <b>"~" - select all subsequent items</b>
+        <ul class="cards">
+            <li class="king diamond">king diamond</li>
+            <li class="queen heart">queen heart</li>
+            <li class="jack spade">jack spade</li>
+            <li class="ace heart">ace heart</li>
+            <li class="king club">king club</li>
+        </ul>
+    </section>
+
+    <section class="selector-6">
+        <p>:empty</p>
+        <ul></ul>
+        <ul>
+            <li>Some text</li>
+        </ul>
+        <ul></ul>
+    </section>
+
+    <section class="selector-7">
+        <p>::first-line ::first-letter</p>
+        <pre>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Fuga repudiandae iste ipsam recusandae dolore, mollitia ab ipsa ea nihil eos laboriosam voluptatum ad nulla. 
+            Sapiente aspernatur sint amet aut nesciunt!
+        </pre>
+    </section>
+
+    <section class="selector-8">
+        <p>[foo^="bar"] - select elements by the occurrence of a substring in the attribute value</p>
+        <div class="message-1"></div>
+        <div class="message-2"></div>
+        <div class="message-3"></div>
+    </section>
+
+    <section>
+        <p>[foo$="bar"] -  selects all elements whose foo attribute value ends with bar.</p>
+        <div class="select-your-hero">
+            <a href="batman.pdf"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="superman.doc"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="batman.pdf"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="batman.pdf"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="superman.doc"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+            <a href="superman.doc"><img src="./src/pdf-file.png" alt="pdf icon" width="40" class="pdf-icon"><img src="./src/docx-file-format.png" alt="docx icon" width="40" class="docx-icon"></a>
+        </div>
+    </section>
+
+    <section>
+        <p>[foo*="bar"] - all elements with the value of the foo attribute containing the substring bar at any position are selected</p>
+        <pre class="person-name">Person name</pre>
+        <div class="some-person-info">Person information</div>
+        <article class="date-person">Person date</article>
+    </section>
+
+    <section>
+        <p>[foo~="bar"] - will select all elements with the value of foo attribute containing the word bar</p>
+        <blockquote cite="Blue Red Green">Blue Red Green</blockquote>
+        <blockquote cite="Black Purple Green">Black Purple Green</blockquote>
+        <blockquote cite="Grey Brown Yellow">Grey Brown Yellow</blockquote>
+    </section>
+
+    <section class="selector-9">
+        <p>[foo|="bar"] - will select all elements whose foo attribute value is either exactly equal to bar or begins with bar followed by a hyphen character - (U+002D)</p>
+        <div lang="en-us en-gb en-au en-nz">Hello World!</div>
+        <div lang="zh-CN">世界您好！</div>
+        <div lang="zh-TW">世界您好！</div>
+    </section>
+
+    <section class="selector-10">
+        <p>:enabled и :disabled</p>
+        <form action="#" method="post" name="form-2" class="form-2">
+            <label for="user-firstname">First name:
+                <input type="text" name="user-firstname" id="user-firstname" enabled>
+            </label>
+            <label for="user-lastname">Last name:
+                <input type="text" name="user-lastname" id="user-lastname" enabled>
+            </label>
+            <label for="user-phone">Phone:
+                <input type="tel" name="user-phone" id="user-phone" disabled>
+            </label>
+            <label for="user-email">Email:
+                <input type="email" name="user-email" id="user-email" enabled>
+            </label>
+            <label for="user-region">Region:
+                <input type="text" name="user-region" id="user-region" disabled>
+            </label>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
+</html>

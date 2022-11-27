@@ -1,0 +1,238 @@
+body {
+    background-color:azure;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section {
+    margin-bottom: 50px;
+    border: 2px solid purple;
+    padding: 10px;
+}
+
+p {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid orange;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0000ff; 
+}
+
+/*! Day13-14 */
+/*! :first-child, :last-child, :nth-child */
+.selector-1 li {
+    width: 300px;
+}
+
+.selector-1 li:first-child, .selector-1 li:last-child {
+    background-color: red;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px dotted #000;
+    color: #fff;
+}
+
+.selector-1 li:nth-child(even) {
+    padding: 15px;
+    font-size: 55px;
+    color: green;
+}
+
+.selector-1 li:nth-child(1) {
+    writing-mode: vertical-lr;
+}
+
+.selector-1 li:nth-child(3) {
+    padding: 10px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-align: center;
+    background-color: yellow;
+}
+
+.selector-1 li:nth-child(4) {
+    text-align: right;
+    letter-spacing: 10px;
+}
+
+/*! :hover :not */
+.selector-2 dt {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.selector-2 dd:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.selector-2 dd:nth-child(even):hover::after {
+    font-size: 25px;
+    color: green;
+    content: " - YES! Good job!";
+}
+
+.selector-2 dd:last-child:hover::after {
+    font-size: 25px;
+    color: red;
+    content: " - NO!";
+}
+
+.submenu {
+    padding-left: 10px;
+}
+
+.selector-3 .top .submenu {
+    display: none;
+}
+  
+.selector-3 .top:hover .submenu {
+    display: block;
+}
+
+/*! attribute selectors */
+.reactions {
+    visibility: collapse;
+}
+
+input:checked + label {
+    visibility: visible;
+}
+
+/*! Day15 */
+/*! :first-of-type */
+.selector-4 li:first-of-type {
+    font-size: 25;
+    color:blueviolet;
+}
+
+.selector-4 li:last-of-type:not(li:nth-child(1)) {
+    font-weight: bold;
+    color:cadetblue;
+}
+
+/*! Subsequent Item Selector: 
+/*!    "+" - select one subsequent item 
+/*!    and 
+/*!    "~" - select all subsequent items */
+.queen.heart + li {
+    background-color: #ffff99;
+}
+
+.selector-5 ul:last-child .king.diamond ~ li {
+    background-color: #99ddff;
+}
+
+/*! :empty */
+.selector-6 ul {
+    width: 100px;
+    border: 1px solid #000;
+}
+
+.selector-6 ul:empty::after{
+    font-size: 20px;
+    color: crimson;
+    content: "Is empty";
+}
+
+/*! ::first-line ::first-letter */
+.selector-7 pre {
+    width: auto;
+}
+
+.selector-7 pre::first-letter {
+    font: italic 1.2em "Fira Sans", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.selector-7 pre::first-line {
+    text-transform: uppercase;
+}
+
+/*! [foo^="bar"] - select elements by the occurrence of a substring in the attribute value */
+.selector-8 div:not(:first-child) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+[class^="message-"] {
+    border: 2px rgb(63, 153, 51) solid;
+    height: 100px;
+}
+
+.message-1 {
+    width: 100px;
+}
+
+.message-2 {
+    width: 200px;
+}
+
+.message-3 {
+    width: 300px;
+}
+
+/*! [foo$="bar"] -  selects all elements whose foo attribute value ends with bar. */
+.select-your-hero a {
+    display: block;
+}
+
+.select-your-hero img {
+    display: none;
+}
+
+.select-your-hero a[href$=".pdf"] .pdf-icon {
+    display: block;
+}
+
+.select-your-hero a[href$=".doc"] .docx-icon {
+    display: block;
+}
+
+/*! Day16 */
+/*! [foo*="bar"] - all elements with the value of the foo attribute containing the substring bar at any position are selected */
+[class*="person"]::first-letter {
+    font: italic 1.2em "Fira Sans", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+/*! [foo~="bar"] - will select all elements with the value of foo attribute containing the word bar */
+[cite~="Red"] {
+    border: 4px solid red;
+}
+  
+[cite~="Purple"] {
+    border: 4px solid purple;
+}
+
+[cite~="Brown"] {
+    border: 4px solid brown;
+}
+
+/*! [foo|="bar"] - will select all elements whose foo attribute value is either exactly equal to bar or begins with bar followed by a hyphen character - (U+002D) */
+.selector-9 [lang|="en"] {
+    color: blue;
+}
+
+/*! :enabled и :disabled */
+.selector-10 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-2 input:enabled {
+    border: 3px solid red;
+}
+
+.form-2 input:disabled {
+    border: 3px solid darkgray;
+}
