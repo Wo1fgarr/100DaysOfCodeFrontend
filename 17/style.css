@@ -1,0 +1,25 @@
+.float-and-flex {
+    display: flex;
+}
+h2 {
+    display: block;
+}
+
+section {
+    margin: 10px;
+}
+
+article {
+    display: flex;
+}
+.float-container-1 .img-1 {
+    float: right;
+    margin: 0 10px 5px 0;
+    text-align: right;
+    border: 1px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
