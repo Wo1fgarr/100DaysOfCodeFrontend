@@ -1,9 +1,136 @@
+@font-face {
+    font-family: "HelveticaNeueCyr-Thin";
+    src: url("../18/fonts/HelveticaNeueCyr-Light.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyr-Black";
+    src: url("../18/fonts/HelveticaNeueCyr-Black.woff");
+}
+
 * {
     box-sizing: border-box;
 }
 
+body {
+    font-family: "HelveticaNeueCyr-Thin";
+    background-color: rgb(219, 214, 214);
+
+/*! Header */
+}
+header {
+    margin-bottom: 20px;
+    outline: 3px solid blue;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px;
+}
+
 .header-container {
     display: grid;
-    grid-template-columns: [start] 100px [line2] 250px [line3] 40px [end];
+    grid-template-columns: [start] 15% [line2] 70% [line3] 15% [end];
+    padding: 10px;
+    justify-content: center;
+    outline: 1px solid red;
+}
+
+.header-container h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: "HelveticaNeueCyr-Black";
+}
+
+.header-nav-menu {
+    grid-column-start: 2;
+}
+
+.header-nav-menu ul {
+    text-align: center;
+}
+
+.header-nav-menu li {
+    display: inline;
+    font-size: 20px;
+}
+
+.header-nav-menu li:not(:first-child) {
+    margin-left: 10%;
+}
+
+/*! Main */
+main {
+    padding: 10px;
+    outline: 3px solid blue;
+}
+
+main section {
+    border-bottom: 1px solid #000;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: [start] 70% [line2] 30% [end];
+    padding: 10px;
+    outline: 1px solid red;
+}
+
+.main-article img {
+    float: left;
+    margin-right: 10px;
+}
+
+.main-section-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 10px;
+}
+
+.main-section-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-section-posts article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-section-posts article:not(:last-child) {
+    margin-right: 10px;
+    border-right: 1px solid #000;
+}
+
+.main-section-posts article p {
+    font-size: 15px;
+}
+
+.posts-item {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+aside {
+    padding: 10px;
+    border-left: 1px solid #000;
 }
 
