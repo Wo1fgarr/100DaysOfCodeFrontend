@@ -34,5 +34,5 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 14 | Selectors and pseudo-classes:<br />:first-child, :last-child, :nth-child<br />:hover, :not, ::after, :checked| &#9745; | ![Tomatoes finished](./src/img/2022-11-25.png) |
 | 15 | Selectors and pseudo-classes:<br />:first-of-type, Subsequent Item Selector, :empty<br />::first-line, ::first-letter, [foo^="bar"], [foo$="bar"] | &#9745; | ![Tomatoes finished](./src/img/2022-11-26.png) |
 | 16 | Selectors and pseudo-classes:<br />[foo*="bar"], [foo~="bar"], [foo\|="bar"]<br />:enabled, :disabled | &#9745; | ![Tomatoes finished](./src/img/2022-11-27.png) |
-| 17 | I'm starting to dive into float, flexbox, and grid. | &#9745; | ![Tomatoes finished](./src/2022-11-28.png) |
-| 18 | End of styling the HTML page(s) I made when learning HTML! | &#9744; | --- |
+| 17 | I'm starting to dive into float, flexbox, and grid. | &#9745; | ![Tomatoes finished](./src/img/2022-11-28.png) |
+| 18 | Grid layout | &#9745; | ![Tomatoes finished](./src/img/2022-11-29_.png) |
