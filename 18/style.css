@@ -85,6 +85,10 @@ main section {
     border-bottom: 1px solid #000;
 }
 
+main section:first-child {
+    padding-bottom: 10px;
+}
+
 .main-container {
     display: grid;
     grid-template-columns: [start] 70% [line2] 30% [end];
@@ -115,6 +119,7 @@ main section {
 
 .main-section-posts article:not(:last-child) {
     margin-right: 10px;
+    padding-right: 10px;
     border-right: 1px solid #000;
 }
 
