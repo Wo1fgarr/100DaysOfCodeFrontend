@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: [start] 100px [line2] 250px [line3] 40px [end];
+}
+
