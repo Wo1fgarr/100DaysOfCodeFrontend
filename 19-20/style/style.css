@@ -61,6 +61,10 @@ ul {
     display: flex;
 }
 
+.header-nav-list a {
+    color: #fff;
+}
+
 .header-nav-list li:not(:last-child) {
     margin-right: 42px;
 }
@@ -69,6 +73,14 @@ ul {
     display: flex;
     align-items:center;
     padding-left: 225px;
+}
+
+#login {
+    color: #fff;
+}
+
+#getApi {
+    color: #000;
 }
 
 .header-login-api li:first-child {
@@ -89,6 +101,31 @@ ul {
     outline: 1px solid red;
 }
 
+.section1-container {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.section1-left {
+    padding-top: 180px;
+    padding-left: 175px;
+    width: 720px;
+    height: 790px;
+    outline: 1px solid red;
+}
+
+.section1-right {
+    width: 720px;
+    height: 790px;
+    outline: 1px solid red;
+}
+
+.section1-bottom {
+    padding-top: 70px;
+    padding-left: 155px;
+    padding-right: 155px;
+}
+
 .main-sections .main-section-2 {
     height: 1150px;
     background-color: #FBFCF5;
@@ -102,11 +139,13 @@ ul {
 
 .main-sections .main-section-4 {
     height: 1786px;
+    background-color: #FBFCF5;
     outline: 1px solid red;
 }
 
 .main-sections .main-section-5 {
     height: 685px;
+    background-color: #0A2540;
     outline: 1px solid red;
 }
 
@@ -127,6 +166,13 @@ ul {
 
 .main-sections .color-sections378 {
     background-color: #F2F4E8;
+}
+
+/*! Footer */
+.footer-container {
+    height: 684px;
+    background-color: #193844;
+    outline: 1px solid red;
 }
 
 

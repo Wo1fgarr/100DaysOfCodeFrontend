@@ -36,3 +36,5 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 16 | Selectors and pseudo-classes:<br />[foo*="bar"], [foo~="bar"], [foo\|="bar"]<br />:enabled, :disabled | &#9745; | ![Tomatoes finished](./src/img/2022-11-27.png) |
 | 17 | I'm starting to dive into float, flexbox, and grid. | &#9745; | ![Tomatoes finished](./src/img/2022-11-28.png) |
 | 18 | Grid layout | &#9745; | ![Tomatoes finished](./src/img/2022-11-29_.png) |
+| 19 | Layout according to the layout.<br />Getting to know Figma and Pixel Perfect | &#9745; | ![Tomatoes finished](./src/img/2022-11-30.png) |
+| 20 | Making up according to the layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-01.png)  |
