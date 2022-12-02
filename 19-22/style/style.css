@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../font/Roboto-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../font/Roboto-Bold.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto-Regular";
+    margin: 0;
+    height: 8587px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 1440px;
+}
+
+a {
+    text-decoration: none;
+}
+  
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section-btn li {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding: 15px 90px 15px 90px;
+}
+
+.section-btn li:first-child {
+    margin-right: 12px;
+    border: 1px solid #1FBD8A;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.section-btn li:last-child {
+    padding-right: 100px;
+    border: 1px solid #192F44;
+    border-radius: 50px;
+    background-color: #192F44;
+}
+
+/*! Header */
+header {
+    position: absolute;
+    left: 232px;
+    box-shadow: 0px 5px 9px 1px #13281D19;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 71px;
+    background-color: #1FBD8A;
+}
+
+.header-logo {
+    display: flex;
+    padding-left: 177px;
+    padding-right: 50px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-list a {
+    color: #fff;
+}
+
+.header-nav-list li:not(:last-child) {
+    margin-right: 42px;
+}
+
+.header-login-api {
+    display: flex;
+    align-items:center;
+    padding-left: 225px;
+}
+
+#login {
+    color: #fff;
+}
+
+#getApi {
+    color: #000;
+}
+
+.header-login-api li:first-child {
+    margin-right: 35px; 
+}
+
+.header-login-api li:last-child {
+    padding: 8px 30px 8px 30px;
+    border: 1px solid #fff;
+    background: #F4FBF9;
+    border-radius: 50px;
+}
+
+/*! Main */
+main {
+    padding-top: 71px;
+}
+
+.main-sections .main-section-1 {
+    height: 1100px;
+    background-color: #1FBD8A;
+}
+
+.section1-container {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.section1-left {
+    width: 720px;
+    height: 790px;
+}
+
+.section1-left span {
+    position: relative;
+    padding: 7px 15px 11px 15px;
+    height: 33px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    border: 1px solid #1FBD8A;
+    border-radius: 33px;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 115px;
+    left: 175px;
+}
+
+.section1-left h1 {
+    position: relative;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 160px;
+    width: 504px;
+    left: 175px;
+    top: 90px;
+    color: #fff;
+}
+
+.section1-left p {
+    position: relative;
+    height: 78px;
+    width: 530px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    left: 175px;
+    top: 50px;
+    color: #fff;
+}
+
+.section1-left .section-btn {
+    display: flex;
+    position: relative;
+    width: 536px;
+    left: 175px;
+    top: 75px;
+}
+
+.section1-container .section-btn li:first-child a {
+    color: #000;
+}
+
+.section1-container .section-btn li:last-child a {
+    color: #fff;
+}
+
+.section1-right {
+    width: 720px;
+    height: 790px;
+}
+
+.section1-right img:first-child {
+    position: absolute;
+    top: 91px;
+    left: 930px;
+}
+
+.section1-right img:nth-child(2) {
+    position: absolute;
+    top: 136px;
+    left: 1200px;
+}
+
+.section1-right img:nth-child(3) {
+    position: absolute;
+    top: 398px;
+    left: 1200px;
+}
+
+.section1-right img:last-child {
+    position: absolute;
+    top: 600px;
+    left: 960px
+}
+
+.section1-bottom {
+    padding-top: 70px;
+    padding-left: 155px;
+    padding-right: 155px;
+}
+
+.main-sections .main-section-2 {
+    height: 1150px;
+    background-color: #FBFCF5;
+}
+
+.main-section-2 span {
+    position: relative;
+    height: 24px;
+    width: 99px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #00CA90;
+    top: 150px;
+    left: 672px;
+}
+
+.main-section-2 h2 {
+    position: relative;
+    height: 56px;
+    width: 782px;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    color: #013A51;
+    top: 125px;
+    left: 329px;
+}
+
+.main-section-2 p {
+    position: relative;
+    height: 78px;
+    width: 846px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #013A51;
+    top: 102px;
+    left: 297px;
+}
+
+.section2-container .section-btn {
+    display: flex;
+    position: relative;
+    width: 600px;
+    left: 460px;
+    top: 103px;
+}
+
+.section2-container .section-btn li:first-child {
+    padding-left: 58px;
+    padding-right: 58px;
+    background-color: #00CA90;
+    color: #fff;
+}
+
+.section2-container .section-btn li:first-child a {
+    color: #fff;
+}
+
+.section2-container .section-btn li:last-child a {
+    color: #fff;
+}
+
+.section2-container img {
+    position: relative;
+    top: 165px;
+    left: 175px;
+}
+
+.main-sections .main-section-3  {
+    height: 1160px;
+    outline: 1px solid red;
+}
+
+.main-sections .main-section-4 {
+    height: 1786px;
+    background-color: #FBFCF5;
+    outline: 1px solid red;
+}
+
+.main-sections .main-section-5 {
+    height: 685px;
+    background-color: #0A2540;
+    outline: 1px solid red;
+}
+
+.main-sections .main-section-6 {
+    height: 972px;
+    outline: 1px solid red;
+}
+
+.main-sections .main-section-7 {
+    height: 553px;
+    outline: 1px solid red;
+}
+
+.main-sections .main-section-8 {
+    height: 426px;
+    outline: 1px solid red;
+}
+
+.main-sections .color-sections378 {
+    background-color: #F2F4E8;
+}
+
+/*! Footer */
+.footer-container {
+    height: 684px;
+    background-color: #193844;
+    outline: 1px solid red;
+}
+
+
+
+
