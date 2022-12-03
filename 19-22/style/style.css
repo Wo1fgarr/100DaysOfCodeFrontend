@@ -313,13 +313,216 @@ main {
 
 .main-sections .main-section-3  {
     height: 1160px;
-    outline: 1px solid red;
+}
+
+.section3-container {
+    display: flex;
+}
+
+.section3-container div {
+    width: 720px;
+    height: 1160px;
+}
+
+.section3-left span {
+    position: relative;
+    height: 24px;
+    width: 110px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00CA90;
+    top: 146px;
+    left: 174px;
+}
+
+.section3-left h2 {
+    position: relative;
+    height: 168px;
+    width: 467px;
+    font-size: 41px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;
+    top: 123px;
+    left: 175px;
+
+}
+
+.section3-left p {
+    position: relative;
+    height: 168px;
+    width: 518px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;
+    top: 98px;
+    left: 175px;
+}
+
+.section3-left-btn {
+    position: relative;
+    height: 16px;
+    width: 75px;
+    padding: 7px 40px 7px 40px;
+    border: 2px solid #00CA90;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #013A51;
+    top: 103px;
+    left: 174px;
+}
+
+.section3-right .section3-right-article:nth-child(1) {
+    position: relative;
+    top: 149px;
+    left: 100px;
+}
+
+.section3-right .section3-right-article:nth-child(2) {
+    position: relative;
+    top: 170px;
+    left: 100px;
+}
+
+.section3-right .section3-right-article:nth-child(3) {
+    position: relative;
+    top: 218px;
+    left: 100px;
+}
+
+.section3-right-article h3 {
+    margin-top: 20px;
+    height: 32px;
+    width: 300px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;
+}
+
+.section3-right-article p {
+    height: 88px;
+    width: 430px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5C7782;
 }
 
 .main-sections .main-section-4 {
     height: 1786px;
     background-color: #FBFCF5;
     outline: 1px solid red;
+}
+
+.section4-header {
+    height: 390px;
+    outline: 1px solid red;
+}
+
+.section4-header span {
+    position: relative;
+    height: 24px;
+    width: 88px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #00CA90;
+    top: 150px;
+    left: 677px;
+}
+
+.section4-header h2 {
+    position: relative;
+    width: 747px;
+    height: 112px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: #013A51;
+    top: 125px;
+    left: 345px;
+}
+
+.section4-header p {
+    position: relative;
+    width: 872px;
+    height: 78px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #013A51;
+    top: 100px;
+    left: 284px;
+}
+
+.section4-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 177px;
+    padding-top: 68px;
+}
+
+.section4-articles {
+    display: flex;
+    width: 440px;
+    height: 189px;
+}
+
+
+.section4-articles h3 {
+    height: 32px;
+    width: 134px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;
+}
+
+.section4-articles p {
+    height: 88px;
+    width: 241px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5C7782;
+}
+
+.section4-articles a {
+    height: 20px;
+    width: 76px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;     
 }
 
 .main-sections .main-section-5 {
