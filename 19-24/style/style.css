@@ -479,22 +479,21 @@ main {
 }
 
 .section4-main {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 177px;
-    padding-top: 68px;
+    height: 998px;
 }
 
 .section4-articles {
     display: flex;
     width: 440px;
-    height: 189px;
+    height: 180px;
 }
-
 
 .section4-articles h3 {
     height: 32px;
     width: 134px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -504,7 +503,8 @@ main {
 }
 
 .section4-articles p {
-    height: 88px;
+    margin: 0;
+    margin-bottom: 10px;
     width: 241px;
     font-size: 15px;
     font-weight: 400;
@@ -523,6 +523,23 @@ main {
     letter-spacing: 0em;
     text-align: left;
     color: #013A51;     
+}
+
+.section4-articles div {
+    padding-left: 30px;
+    position: relative;
+}
+
+.section4-articles:nth-child(1) {
+    position: relative;
+    top: 71px;
+    left: 175px;
+}
+
+.section4-articles:nth-child(2) {
+    position: relative;
+    top: -101px;
+    left: 732px;
 }
 
 .main-sections .main-section-5 {

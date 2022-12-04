@@ -40,3 +40,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 20 | Making up according to the layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-01.png)  |
 | 21 | Header and two sections are ready<br />box-shadow now I know how to draw you)) | &#9745; | ![Tomatoes finished](./src/img/2022-12-02.png) |
 | 22 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-03_.png) |
+| 23 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-04.png) |
