@@ -657,7 +657,8 @@ header::before {
     margin-left: 175px;
 }
 
-.section5-left span {
+.section5-left span:nth-child(1) {
+    display: block;
     height: 24px;
     width: 256px;
     font-size: 18px;
@@ -668,9 +669,12 @@ header::before {
     color: #00CA90;
 }
 
-.section5-left h2 {
+.section5-left span:nth-child(2) {
+    display: inline-block;
     height: 56px;
     width: 356px;
+    margin: 0;
+    margin-top: 10px;
     font-size: 42px;
     font-weight: 400;
     line-height: 56px;
@@ -682,12 +686,46 @@ header::before {
 .section5-left p {
     height: 144px;
     width: 519px;
+    margin-top: 20px;
+    margin-bottom: 23px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
+}
+
+.section5-container .section-btn {
+    display: flex;
+    position: relative;
+    width: 600px;
+}
+
+.section5-container .section-btn li:first-child {
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #00CA90;
+    color: #fff;
+}
+
+.section5-container .section-btn li:last-child {
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #fff;
+    color: #0A2540;
+}
+
+.section5-container .section-btn li:first-child a {
+    color: #fff;
+}
+
+.section5-container .section-btn li:last-child a {
+    color: #0A2540;
+}
+
+.section5-right {
+    margin-left: 50px;
 }
 
 .main-sections .main-section-6 {
