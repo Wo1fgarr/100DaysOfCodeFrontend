@@ -59,10 +59,24 @@ ul {
 }
 
 /*! Header */
+/* header span {
+    display: block;
+    position: relative;
+    box-shadow: 0px 5px 10px 1px #000;
+} */
+
 header {
+    position: relative;
+    width: 100%;
+}
+
+header::before {
+    content: "";
     position: absolute;
-    left: 240px;
-    box-shadow: 0px 5px 9px 1px #13281D19;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    box-shadow: 0px 5px 10px rgba(1, 19, 9, 0.098);
 }
 
 .header-container {
@@ -120,10 +134,6 @@ header {
 }
 
 /*! Main */
-main {
-    padding-top: 71px;
-}
-
 .main-sections .main-section-1 {
     height: 1100px;
     background-color: #1FBD8A;
@@ -131,7 +141,7 @@ main {
 
 .section1-container {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 
 .section1-left {
@@ -207,27 +217,27 @@ main {
 }
 
 .section1-right img:first-child {
-    position: absolute;
-    top: 91px;
-    left: 937px;
+    position: relative;
+    top: 20px;
+    right: 21px;
 }
 
 .section1-right img:nth-child(2) {
-    position: absolute;
-    top: 136px;
-    left: 1208px;
+    position: relative;
+    left: 248px;
+    bottom: 553px;
 }
 
 .section1-right img:nth-child(3) {
-    position: absolute;
-    top: 398px;
-    left: 1208px;
+    position: relative;
+    bottom: 632px;
+    left: 248px;
 }
 
 .section1-right img:last-child {
-    position: absolute;
-    top: 600px;
-    left: 968px
+    position: relative;
+    bottom: 975px;
+    left: 6px;
 }
 
 .section1-bottom {
@@ -428,12 +438,10 @@ main {
 .main-sections .main-section-4 {
     height: 1786px;
     background-color: #FBFCF5;
-    outline: 1px solid red;
 }
 
 .section4-header {
     height: 390px;
-    outline: 1px solid red;
 }
 
 .section4-header span {
@@ -484,7 +492,7 @@ main {
 
 .section4-articles {
     display: flex;
-    width: 440px;
+    width: 480px;
     height: 180px;
 }
 
@@ -505,7 +513,7 @@ main {
 .section4-articles p {
     margin: 0;
     margin-bottom: 10px;
-    width: 241px;
+    width: 250px;
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
@@ -527,7 +535,6 @@ main {
 
 .section4-articles div {
     padding-left: 30px;
-    position: relative;
 }
 
 .section4-articles:nth-child(1) {
@@ -538,14 +545,149 @@ main {
 
 .section4-articles:nth-child(2) {
     position: relative;
-    top: -101px;
+    top: -110px;
     left: 732px;
 }
 
+.section4-articles:nth-child(2) div {
+    position: relative;
+    top: 9px;
+}
+
+.section4-articles:nth-child(3) {
+    position: relative;
+    top: -68px;
+    left: 175px;
+}
+
+.section4-articles:nth-child(4) {
+    position: relative;
+    bottom: 250px;
+    left: 732px;
+    height: 200px;
+}
+
+.section4-articles:nth-child(4) div h3 {
+    width: 250px;
+    margin-bottom: 40px;
+}
+
+.section4-articles:nth-child(5) {
+    position: relative;
+    left: 175px;
+    bottom: 195px;
+}
+
+.section4-articles:nth-child(6) {
+    position: relative;
+    left: 730px;
+    bottom: 380px;
+}
+
+.section4-articles:nth-child(6) h3 {
+    width: 200px;
+}
+
+.section4-articles:nth-child(7) {
+    position: relative;
+    left: 170px;
+    bottom: 330px;
+}
+
+.section4-articles:nth-child(8) {
+    position: relative;
+    left: 730px;
+    bottom: 515px;
+}
+
+.section4-footer {
+    align-items: center;
+}
+
+.section4-footer h2 {
+    position: relative;
+    height: 43px;
+    width: 348px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    top: 15px;
+    left: 545px;
+}
+
+.section4-footer p {
+    position: relative;
+    height: 78px;
+    width: 894px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    left: 275px;
+}
+
+.section4-footer a {
+    position: relative;
+    top: 15px;
+    left: 595px;
+    padding: 15px 89px 19px 88px;
+    height: 50px;
+    width: 255px;
+    color: #fff;
+    border: 1px solid #FBFCF5;
+    border-radius: 50px;
+    background-color: #192F44;
+}
+ 
 .main-sections .main-section-5 {
     height: 685px;
     background-color: #0A2540;
     outline: 1px solid red;
+}
+
+.section5-container {
+    display: flex;
+    padding-top: 155px;
+}
+
+.section5-left {
+    margin-left: 175px;
+}
+
+.section5-left span {
+    height: 24px;
+    width: 256px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00CA90;
+}
+
+.section5-left h2 {
+    height: 56px;
+    width: 356px;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.section5-left p {
+    height: 144px;
+    width: 519px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
 }
 
 .main-sections .main-section-6 {
