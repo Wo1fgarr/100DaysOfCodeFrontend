@@ -42,3 +42,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 22 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-03_.png) |
 | 23 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-04.png) |
 | 24 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-05_.png) |
+| 25 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-06_.png) |

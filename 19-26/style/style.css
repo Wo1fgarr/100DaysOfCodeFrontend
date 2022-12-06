@@ -59,12 +59,6 @@ ul {
 }
 
 /*! Header */
-/* header span {
-    display: block;
-    position: relative;
-    box-shadow: 0px 5px 10px 1px #000;
-} */
-
 header {
     position: relative;
     width: 100%;
@@ -645,7 +639,6 @@ header::before {
 .main-sections .main-section-5 {
     height: 685px;
     background-color: #0A2540;
-    outline: 1px solid red;
 }
 
 .section5-container {
@@ -730,17 +723,129 @@ header::before {
 
 .main-sections .main-section-6 {
     height: 972px;
-    outline: 1px solid red;
+}
+
+.section6-container {
+    display: flex;
+}
+
+.section6-right span:first-child {
+    position: relative;
+    width: 143px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #00CA90;
+    top: 80px;
+    left: 115px;
+}
+
+.section6-right p {
+    position: relative;
+    width: 546px;
+    height: 121px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: #013A51;
+    top: 72px;
+    left: 115px;
+}
+
+.section6-right .section6-right-double_quotes{
+    position: relative;
+    height: 52px;
+    width: 56px;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00CA90;
+    top: 95px;
+    left: 115px;
+}
+
+.section6-right blockquote {
+    position: relative;
+    height: 337px;
+    width: 559px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;
+    top: 80px;
+    left: 35px;
+}
+
+.section6-right figcaption a {
+    position: relative;
+    height: 20px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;
+    top: 75px;
+    left: 75px;
+}
+
+.section6-logo {
+    position: relative;
+    top: 105px;
+    left: 135px;
+}
+
+.section6-right-autors {
+    position: relative;
+    left: 207px;
+}
+
+.section6-right-autors p {
+    margin: 0;
+    padding: 0;
+    max-width: 198px;
+    height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #013A51;
+}
+
+.section6-right .section6-btn {
+    position: relative;
+    padding: 15px 128px 19px 128px;
+    height: 16px;
+    width: 94px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #013A51;
+    top: 126px;
+    left: 116px;
+    border: 2px solid #00CA90;
+    border-radius: 50px;
 }
 
 .main-sections .main-section-7 {
-    height: 553px;
+    height: 979px;
     outline: 1px solid red;
 }
 
-.main-sections .main-section-8 {
-    height: 426px;
-    outline: 1px solid red;
+.section7-container h2 {
+    padding: 0;
+    margin: 0;
 }
 
 .main-sections .color-sections378 {
