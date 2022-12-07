@@ -840,12 +840,126 @@ header::before {
 
 .main-sections .main-section-7 {
     height: 979px;
-    outline: 1px solid red;
 }
 
 .section7-container h2 {
+    position: relative;
     padding: 0;
     margin: 0;
+}
+
+.section7-top {
+    position: relative;
+    z-index: 1;
+    height: 553px;
+    text-align: center;
+}
+
+.section7-top::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    display: block;
+    height: 328px;
+    width: 1090px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F2F4E8 217.84%), #193844;
+    border-radius: 30px;
+    top: 150px;
+    left: 175px;
+}
+
+.section7-top h2 {
+    position: relative;
+    z-index: 3;
+    height: 48px;
+    width: 502px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    top: 225px;
+    left: 470px;
+}
+
+.section7-top span {
+    position: relative;
+    z-index: 3;
+    display: block;
+    height: 56px;
+    width: 397px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    top: 225px;
+    left: 520px;
+}
+
+.section7-top a {
+    position: relative;
+    z-index: 3;
+    padding: 15px 89px 19px 88px;
+    height: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    top: 275px;
+    border: 1px solid #00CA90;
+    border-radius: 50px;
+    background-color: #00CA90;
+}
+
+.section7-bottom {
+    height: 426px;
+    text-align: center;
+}
+
+.section7-bottom span {
+    position: relative;
+    height: 24px;
+    width: 109px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #00CA90;
+    top: 75px;
+}
+
+.section7-bottom h2 {
+    position: relative;
+    height: 56px;
+    width: 742px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: #013A51;
+    top: 85px;
+    left: 350px;
+}
+
+.section7-bottom a {
+    position: relative;
+    padding: 15px 103px 19px 103px;
+    width: 74px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    color: #013A51;
+    top: 160px;
+    border: 2px solid #00CA90;
+    border-radius: 50px;
 }
 
 .main-sections .color-sections378 {
@@ -854,10 +968,96 @@ header::before {
 
 /*! Footer */
 .footer-container {
+    padding-left: 175px;
+    padding-right: 175px;
     height: 684px;
     background-color: #193844;
-    outline: 1px solid red;
 }
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 141px;
+    border-bottom: 2px solid #275668;
+}
+
+.footer-btn li {
+    display: inline-block;
+}
+
+.footer-top .footer-btn li:first-child a {
+    margin-right: 30px;
+    height: 16px;
+    width: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.footer-top .footer-btn li:last-child a {
+    padding: 3px 40px 3px 40px;
+    height: 16px;
+    width: 87px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #00CA90;
+    border-radius: 50px;
+    background-color: #00CA90;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: 428px;
+    border-bottom: 2px solid #275668;
+}
+
+.footer-main h3 {
+    height: 18px;
+    width: 91px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 2.5999999046325684px;
+    text-align: left;
+    color: #fff;
+}
+
+.footer-main-product li:not(:last-child), 
+.footer-main-use-cases li:not(:last-child), 
+.footer-main-developers li:not(:last-child), 
+.footer-main-about li:not(:last-child), 
+.footer-main-faq li:not(:last-child) {
+    margin-bottom: 17px;
+}
+
+.footer-main a {
+    height: 19px;
+    width: 143px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.footer-bottom {
+    padding-top: 35px;
+    color: #fff;
+}
+
 
 
 
