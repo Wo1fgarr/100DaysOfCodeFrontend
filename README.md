@@ -36,10 +36,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 16 | Selectors and pseudo-classes:<br />[foo*="bar"], [foo~="bar"], [foo\|="bar"]<br />:enabled, :disabled | &#9745; | ![Tomatoes finished](./src/img/2022-11-27.png) |
 | 17 | I'm starting to dive into float, flexbox, and grid. | &#9745; | ![Tomatoes finished](./src/img/2022-11-28.png) |
 | 18 | Grid layout | &#9745; | ![Tomatoes finished](./src/img/2022-11-29_.png) |
-| 19 | Layout according to the layout.<br />Getting to know Figma and Pixel Perfect | &#9745; | ![Tomatoes finished](./src/img/2022-11-30.png) |
-| 20 | Making up according to the layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-01.png)  |
-| 21 | Header and two sections are ready<br />box-shadow now I know how to draw you)) | &#9745; | ![Tomatoes finished](./src/img/2022-12-02.png) |
-| 22 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-03_.png) |
-| 23 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-04.png) |
-| 24 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-05_.png) |
-| 25 | Continue working with layout | &#9745; | ![Tomatoes finished](./src/img/2022-12-06_.png) |
+| 19 - 26 | working with layout with Figma and Pixel Perfect | &#9745; | ![Tomatoes finished](./src/img/2022-11-30.png)![Tomatoes finished](./src/img/2022-12-01.png)![Tomatoes finished](./src/img/2022-12-02.png)![Tomatoes finished](./src/img/2022-12-03_.png)![Tomatoes finished](./src/img/2022-12-04.png)![Tomatoes finished](./src/img/2022-12-05_.png)![Tomatoes finished](./src/img/2022-12-06_.png)![Tomatoes finished](./src/img/2022-12-07.png) |
