@@ -37,3 +37,11 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 17 | I'm starting to dive into float, flexbox, and grid. | &#9745; | ![Tomatoes finished](./src/img/2022-11-28.png) |
 | 18 | Grid layout | &#9745; | ![Tomatoes finished](./src/img/2022-11-29_.png) |
 | 19 - 26 | working with layout with Figma and Pixel Perfect | &#9745; | ![Tomatoes finished](./src/img/2022-11-30.png)![Tomatoes finished](./src/img/2022-12-01.png)![Tomatoes finished](./src/img/2022-12-02.png)![Tomatoes finished](./src/img/2022-12-03_.png)![Tomatoes finished](./src/img/2022-12-04.png)![Tomatoes finished](./src/img/2022-12-05_.png)![Tomatoes finished](./src/img/2022-12-06_.png)![Tomatoes finished](./src/img/2022-12-07.png) |
+
+---
+
+## JavaScript
+
+| Days | Description | Done | Tomatoes |
+| --- | --- | --- | --- |
+| 27 | Basic JavaScript. Introduction to JavaScript | &#9745; | ![Tomatoes finished](./src/img/2022-12-08.png) |
