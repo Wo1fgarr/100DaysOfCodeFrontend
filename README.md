@@ -45,3 +45,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | Days | Description | Done | Tomatoes |
 | --- | --- | --- | --- |
 | 27 | Basic JavaScript. Introduction to JavaScript | &#9745; | ![Tomatoes finished](./src/img/2022-12-08.png) |
+| 28 | Basic JavaScript. Javascript Variables: Variable Declarations, Hoisting, Naming Rules, Scopes<br />Datatypes: number | &#9745; | ![Tomatoes finished](./src/img/2022-12-09.png) |
