@@ -48,3 +48,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 28 | Basic JavaScript. Javascript Variables: Variable Declarations, Hoisting, Naming Rules, Scopes<br />Datatypes: number | &#9745; | ![Tomatoes finished](./src/img/2022-12-09.png) |
 | 29 | Basic JavaScript. Datatypes: string, string methods | &#9745; | ![Tomatoes finished](./src/img/2022-12-10.png) |
 | 30 | Basic JavaScript. Datatypes: boolean, bigint, null, undefined, symbol<br />Basic JavaScript. Datatypes: objects, built-in objects<br />typeof operator<br />Type casting: Type conversion vs. type coersion, explicit type casting, implicit type casting | &#9745; | ![Tomatoes finished](./src/img/2022-12-11.png) |
+| 31 | Basic JavaScript. Indexed collections | &#9745; | ![Tomatoes finished](./src/img/2022-12-12.png) |
