@@ -52,4 +52,4 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 32 | Basic JavaScript. Control Flow: while statement, Conditional statements(If else, Switch Case)<br />Functions: Function Parameters, Arrow Functions, Default Parameters | &#9745; | ![Tomatoes finished](./src/img/2022-12-13.png) |
 | 33 | I started writing a simple calculator  | &#9745; | ![Tomatoes finished](./src/img/2022-12-14.png) |
 | 34 | More practice with JS.  | &#9745; | ![Tomatoes finished](./src/img/2022-12-15.png) |
-| 35-38 | Continue to make a simple calculator  | &#9745; | ![Tomatoes finished](./src/img/2022-12-15.png) |
+| 35-38 | Continue to make a simple calculator  | &#9745; | ![Tomatoes finished]() |

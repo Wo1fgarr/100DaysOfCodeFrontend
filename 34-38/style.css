@@ -6,7 +6,7 @@ body {
     margin: 15px;
     padding: 0;
     width: 350px;
-    height: 250px;
+    height: 350px;
 }
 
 ul {
@@ -15,12 +15,13 @@ ul {
 
 li {
     list-style: none;
+    margin-bottom: 5px;
 }
 
 .calc-container {
     padding: 20px;
     display: grid;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
     justify-content: center;
     border: 3px solid darkgray;
     background-color: rgba(72 122 180 / .2);
@@ -54,3 +55,4 @@ li {
     height: 50px;
     font-size: 25px;
 }
+
