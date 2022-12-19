@@ -1,60 +1,43 @@
-const printNumbers = () => {
-    const parent = document.querySelector('.calc-btn-numbers');
-    const child = parent.getElementsByTagName('button');
-    console.log(child);
-
-    // here need to take one value of button then clicked
-    for (let i = 0; i < child.length; ++i) {
-        const button = child[i];
-        console.log(button.textContent)
-    }
-}
-
-// const printNumbers = () => {
-//     console.log(this.textContent);
-//     console.log('work');
-// }
-
-const outputResult = () => {
-    let inputData = document.querySelector('#calc-input').value;
-    console.log(inputData);
-    document.querySelector('.calc-output').innerHTML = inputData;
-}
-
-const addPlus = () => {
-    let btnPlusValue = document.querySelector('#btn-plus').textContent;
+// work with numbers buttons
+const listBtnNumber = document.querySelector('.calc-btn-numbers');
+listBtnNumber.addEventListener('click', (event) => {
+    let getButtonValue = event.target.textContent;
     let inputData = document.querySelector('#calc-input').value;
 
-    if (inputData.length > 0) {
-        btnPlusValue = `${inputData}${btnPlusValue}`;
-    }
+    if (inputData.length > 0) getButtonValue = `${inputData}${getButtonValue}`;
 
-    document.querySelector('#calc-input').value = btnPlusValue;
-}
+    document.querySelector('#calc-input').value = getButtonValue;
+    console.log(getButtonValue);
+});
 
-const clearData = () => {
+// work with operation buttons
+const listBtnOperations = document.querySelector('.calc-btn-operation');
+listBtnOperations.addEventListener('click', (event) => {
+    let getButtonType = event.target.textContent;
+    let inputData = document.querySelector('#calc-input').value;
+
+    if (inputData.length > 0) getButtonType = `${inputData}${getButtonType}`;
+
+    document.querySelector('#calc-input').value = getButtonType;
+});
+
+// clear data
+document.querySelector('#btn-clean').addEventListener('click', () => {
     document.querySelector('#calc-input').value = '';
     document.querySelector('.calc-output').innerHTML = '0';
+});
+
+// get results
+const searchSign = (inputString) => {
     
 }
 
-document.querySelector('#btn-result').addEventListener('click', outputResult);
-document.querySelector('#btn-plus').addEventListener('click', addPlus);
-document.querySelector('#btn-clean').addEventListener('click', clearData);
-
-// const parentNumbersBtn = document.querySelector('.calc-btn-numbers');
-// const childNumbersBtn = parentNumbersBtn.getElementsByTagName('button');
-
-// for (let i = 0; i < childNumbersBtn.length; ++i) {
-//     const button = childNumbersBtn[i];
-//     button.addEventListener('click', printNumbers);
-// }
+const printResult = 
+document.querySelector('#btn-result').addEventListener('click', () => {
+    let inputData = document.querySelector('#calc-input').value;
 
 
-// const buttons = document.getElementsByTagName('button');
-// for (let i = 0; i < buttons.length; ++i) {
-//     const button = buttons[i];
-//     button.addEventListener('click', printNumbers);
-// }
+    console.log(inputData);
 
-document.querySelector('.calc-btn-numbers').addEventListener('click', printNumbers);
+    document.querySelector('.calc-output').innerHTML = inputData;
+});
