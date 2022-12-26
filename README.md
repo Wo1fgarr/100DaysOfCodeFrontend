@@ -52,7 +52,7 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 32 | Basic JavaScript. Control Flow: while statement, Conditional statements(If else, Switch Case)<br />Functions: Function Parameters, Arrow Functions, Default Parameters | &#9745; | ![Tomatoes finished](./src/img/2022-12-13.png) |
 | 33 | I started writing a simple calculator  | &#9745; | ![Tomatoes finished](./src/img/2022-12-14.png) |
 | 34 | More practice with JS.  | &#9745; | ![Tomatoes finished](./src/img/2022-12-15.png) |
-| 35-38 | Continue to make a simple calculator  | &#9745; | ![Tomatoes finished]() |
-| 39-42 | Continue to make a simple calculator. Learn how to use reg exp  | &#9745; | ![Tomatoes finished]() |
-| 43-44 | Interval repetition day of HTML | &#9745; | ![Tomatoes finished]() |
-| 45-50 | Interval repetition day of CSS | &#9745; | ![Tomatoes finished]() |
+| 35-38 | Continue to make a simple calculator  | &#9745; |  |
+| 39-42 | Continue to make a simple calculator. Learn how to use reg exp  | &#9745; | ![Tomatoes finished](./src/img/2022-12-20_.png) ![Tomatoes finished](./src/img/2022-12-21.png) ![Tomatoes finished](./src/img/2022-12-22.png) ![Tomatoes finished](./src/img/2022-12-23.png) |
+| 43-44 | Interval repetition day of HTML | &#9745; | ![Tomatoes finished](./src/img/2022-12-24.jpg) ![Tomatoes finished](./src/img/2022-12-25.jpg) |
+| 45-50 | Interval repetition day of CSS<br />CSS variables<br />CSS media query | &#9745; | ![Tomatoes finished]() |
