@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+}
+
+.traffic_lights li {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+ul li:nth-child(1) {
+    background-color: red;
+}
+
+ul li:nth-child(2) {
+    background-color: yellow;
+}
+
+ul li:last-child {
+    background-color: green;
+}

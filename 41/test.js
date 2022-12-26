@@ -24,11 +24,38 @@
 
 // getSignIndexes('2+2+3-4');
 
-let str = '25+233*32-41*3\\2';
+// let str = '25+233*32-41*3\\2';
+// let searchStr = '25-233';
+let searchStr = '233\/100';
 
+// console.log(str.split(/\+/));
+const getResult = (str) => {
+    let result = 0;
+    if (str.search(/\+/) !== -1) {
+        const arrOfnumbers = str.split(/\+/);
+        const sumOfNumbers = arrOfnumbers.reduce((acc, number) => parseInt(acc) + parseInt(number));
+        result = sumOfNumbers;
+    }
+    else if (str.search(/\-/) !== -1) {
+        const arrOfnumbers = str.split(/\-/);
+        const diffOfNumbers = arrOfnumbers.reduce((acc, number) => parseInt(acc) - parseInt(number));
+        result = diffOfNumbers;
+    }
+    else if (str.search(/\*/) !== -1) {
+        const arrOfnumbers = str.split(/\*/);
+        const prodOfNumbers = arrOfnumbers.reduce((acc, number) => parseInt(acc) * parseInt(number));
+        result = prodOfNumbers;
+    }
+    else if (str.search(/[/]/) !== -1) {
+        const arrOfnumbers = str.split(/[/]/);
+        const divOfNumbers = arrOfnumbers.reduce((acc, number) => parseInt(acc) / parseInt(number));
+        result = divOfNumbers;
+    }
 
-let digitIndexRes = str.match(/\d+\*\d+/g);
-console.log(digitIndexRes);
+    return result;
+}
+
+console.log(getResult(searchStr));
 
 /**
  * нужно используя параметры выше получать по очереди операционные выражения из строки
@@ -36,3 +63,10 @@ console.log(digitIndexRes);
  * затем повторить операцию с знаками идущими ниже по приоритету
  * пока строка не будет содержать одно число
  */
+
+// ввод-вывод
+let getInputValue = document.querySelector('#i-1');
+
+getInputValue.addEventListener('input', function(){
+  document.getElementById('.out').innerHTML = this.value;
+});

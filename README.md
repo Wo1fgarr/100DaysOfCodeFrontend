@@ -53,4 +53,6 @@ I have an approximate curriculum based on [Nick Scully's curriculum](https://lev
 | 33 | I started writing a simple calculator  | &#9745; | ![Tomatoes finished](./src/img/2022-12-14.png) |
 | 34 | More practice with JS.  | &#9745; | ![Tomatoes finished](./src/img/2022-12-15.png) |
 | 35-38 | Continue to make a simple calculator  | &#9745; | ![Tomatoes finished]() |
-| 39| Continue to make a simple calculator. Learn how to use reg exp  | &#9745; | ![Tomatoes finished]() |
+| 39-42 | Continue to make a simple calculator. Learn how to use reg exp  | &#9745; | ![Tomatoes finished]() |
+| 43-44 | Interval repetition day of HTML | &#9745; | ![Tomatoes finished]() |
+| 45-50 | Interval repetition day of CSS | &#9745; | ![Tomatoes finished]() |

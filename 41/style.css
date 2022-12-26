@@ -6,7 +6,7 @@ body {
     margin: 15px;
     padding: 0;
     width: 350px;
-    height: 350px;
+    height: 300px;
 }
 
 ul {
@@ -34,16 +34,12 @@ li {
     font-size: 40px;
 }
 
-.calc-output {
+#calc-output {
     width: 250px;
     height: 50px;
+    font-size: 40px;
     border: 2px solid blue;
     background-color: #fff;
-}
-
-.calc-output p {
-    margin: 0;
-    font-size: 40px;
 }
 
 .calc-btn li {
