@@ -16,7 +16,7 @@ console.log(firstFunc(['my', 'name', 'is', 'Trinity'], handler1));
 // get string on array multiplication array element to 10
 function handler2(el) {
     let result = '';
-    const elMap2 = el.map(elItem => {
+    el.map(elItem => {
         // return elItem * 10; my choice
         return result += `${elItem * 10}, `; //  teacher variant
     });
