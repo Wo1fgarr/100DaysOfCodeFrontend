@@ -20,3 +20,18 @@ function createFragment( count, parentLength ) {
 
 let fragment = createFragment(4, ul.childElementCount);
 ul.appendChild(fragment);
+
+// 2
+function changeUlLinks() {
+  const ulChildren = document.querySelector('ul').children;
+
+  return ulChildren.map( el => {
+    if (el.c)
+  })
+
+  console.log(ulChildren);
+}
+
+ul.chil
+
+changeUlLinks();
