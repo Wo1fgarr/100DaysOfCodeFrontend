@@ -22,16 +22,31 @@ let fragment = createFragment(4, ul.childElementCount);
 ul.appendChild(fragment);
 
 // 2
-function changeUlLinks() {
-  const ulChildren = document.querySelector('ul').children;
+const ulLinksArr = Array.from(ul.getElementsByTagName('a'));
+console.log(ulLinksArr);
 
-  return ulChildren.map( el => {
-    if (el.c)
-  })
+ulLinksArr.forEach( el => {
+  const strong = document.createElement('strong');
+  el.appendChild(strong);
+})
 
-  console.log(ulChildren);
-}
+// 3
+const img = document.createElement('img');
+img.setAttribute('src', './scr/maxresdefault.jpg');
+img.setAttribute('alt', 'Jaheira');
+img.setAttribute('width', '500');
+console.log(img);
 
-ul.chil
+const body = document.body;
+body.insertAdjacentElement("afterbegin", img);
 
-changeUlLinks();
+// 4
+const mark = document.querySelector('mark');
+mark.insertAdjacentText('beforeend',' green');
+mark.classList.add('green');
+
+// 5
+const ulChildren = Array.from(document.querySelector('ul').children); 
+const listItems = ulChildren.reverse();
+ul.innerHTML = '';
+listItems.forEach((item) => ul.appendChild(item));
