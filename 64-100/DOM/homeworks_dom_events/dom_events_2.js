@@ -1,7 +1,13 @@
-const dropdown_item = document.getElementsByName('.dropdown-item');
-console.log(dropdown_item);
+let menu = document.querySelector('.menu');
 
-dropdown_item.addEventListener('click', e => {
-  const menuItem = dropdown_item.children;
-  console.log(menuItem);
+menu.addEventListener('click', e => {
+  const item = e.target.nextElementSibling;
+  console.log(menu.children);
+
+  const checkClass = item.classList.contains('dropdown-menu');
+
+  if (checkClass === true) {
+    item.classList.toggle('d-none');
+  }
+  
 })
