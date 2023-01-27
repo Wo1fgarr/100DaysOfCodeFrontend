@@ -1,34 +1,20 @@
-let menu = document.querySelector('.menu');
+const dropdownItems = document.querySelectorAll('.dropdown-item');
 
-menu.addEventListener('click', e => {
-  const item = e.target.nextElementSibling;
-  const menuChildrenList = Array.from(menu.children);
-
-  // console.log(item);
-  // console.log(menuChildrenList);
-  let i = 0;
-  while(i <= 2) {
-    console.log(menuChildrenList[0].querySelector('.dropdown-menu'));
+// В данной переменной мы будем хранить текущее открытое меню
+let currentOpenedMenu = null
+function toggleDropdownMenu(e) {
+  // получаем блок меню внутри .dropdown-item
+  const menu = e.currentTarget.querySelector('.dropdown-menu');
+  // метод toggle возвращает булевое значение, если клас удален то вернет false а если добавлен то true. Это значение мы сохраняем в переменную
+  const isAdded = menu.classList.toggle('d-none');
+  // если в currentOpenedMenu уже есть блок и он не равен текущем menu то мы его скрываем
+  if (currentOpenedMenu && currentOpenedMenu !== menu) {
+    currentOpenedMenu.classList.add('d-none');
   }
+  // Если класс d-none был удален то значет меню видимо и мы его сохраняем в переменную currentOpenedMenu
+  if (!isAdded) {
+    currentOpenedMenu = menu;
+  }
+}
 
-  
-
-  // menuChildrenList.forEach( elem => {
-  //   // console.log(elem);
-  //   let nextMenuSibling = elem.querySelector('.dropdown-menu');
-  //   console.log(nextMenuSibling);
-  //   // console.log(nextMenuSibling === item);
-  //   if (item === nextMenuSibling && nextMenuSibling.classList.contains('d-none')) {
-  //     nextMenuSibling.classList.remove('d-none');
-  //     if (!item === nextMenuSibling && !nextMenuSibling.classList.contains('d-none')) {
-  //       nextMenuSibling.classList.remove('d-none');
-  //     }
-  //   }
-  //   else if (item === nextMenuSibling && !nextMenuSibling.classList.contains('d-none')) {
-  //     nextMenuSibling.classList.add('d-none');
-  //   }
-  //   else if (!item === nextMenuSibling && !nextMenuSibling.classList.contains('d-none')) {
-  //     nextMenuSibling.classList.add('d-none');
-  //   }
-  // })
-})
+dropdownItems.forEach(d => d.addEventListener('click', toggleDropdownMenu));
