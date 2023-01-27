@@ -2,12 +2,16 @@ let menu = document.querySelector('.menu');
 
 menu.addEventListener('click', e => {
   const item = e.target.nextElementSibling;
-  console.log(menu.children);
+  const menuChildrenList = Array.from(menu.children);
 
-  const checkClass = item.classList.contains('dropdown-menu');
-
-  if (checkClass === true) {
-    item.classList.toggle('d-none');
-  }
+  console.log(item);
   
+  menuChildrenList.forEach( elem => {
+    let nextMenuSibling = elem.nextElementSibling;
+    console.log(nextMenuSibling);
+    console.log(nextMenuSibling === item);
+    if (nextMenuSibling === item) {
+      nextMenuSibling.classList.toggle('d-none')
+    }
+  })
 })
