@@ -102,6 +102,8 @@ const tasks = [
       "flex-wrap",
       "mt-2"
     );
+    // 31 навешиваем на li атрибут ID для разпознания какой таск выбран по клику кнопки delete
+    li.setAttribute('data-task-id', _id);
 
     const span = document.createElement("span");
     span.textContent = title;
@@ -178,8 +180,37 @@ const tasks = [
     return { ...newTask };
   }
 
-  function onDeleteHandler(e) {
-    console.log(e.target);
+  // 34 функция подтверждения удаления
+  function deleteTask() {
+    const { title } = objOfTasks[id];
+    const isConfirm = confirm(`Delete task: ${title}`);
+    // 36 проверяем подтверждение
+    if (!isConfirm) return isConfirm;
+    // 37 удаляем, если пользователь подтвердил удаление
+    delete objOfTasks[id];
+    return isConfirm;
+  }
+
+  // 38 функция удаления задачи из HTML
+  function deleteTaskFromHtml(confirmed, el) {
+    // 39 проверяем подтверждение
+    if (!confirmed) return;
+    el.remove;
+  }
+
+  // 29 обработчик кнопки удаления
+  function onDeleteHandler( { target } ) {
+    // 30 если элемент является кнопкой удаления
+    if (target.classList.contains("delete-btn")) {
+    // 32 определяем родителя кнопки delete для получения id таски для удаления
+    const parent = target.closest('[data-task-id]');
+    // 33 забираем id задачи
+    const id = parent.dataset.taskId;
+    // 35 вызываем функцию подтверждения удаления
+    const confirmed = deleteTask(id);
+    // 40 вызываем функцию удаления задачи
+    deleteTaskFromHtml(confirmed, parent);
+    }
   }
 
 })(tasks);
