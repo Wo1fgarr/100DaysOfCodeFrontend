@@ -205,6 +205,7 @@ const tasks = [
     // 32 определяем родителя кнопки delete для получения id таски для удаления
     const parent = target.closest('[data-task-id]');
     // 33 забираем id задачи
+    console.log(parent);
     const id = parent.dataset.taskId;
     // 35 вызываем функцию подтверждения удаления
     const confirmed = deleteTask(id);
