@@ -4,44 +4,57 @@
   const keysList = document.querySelector(".keys");
 
   /** Events*/
-  keysList.addEventListener("click", getKeys)
+  keysList.addEventListener("click", getKeys);
 
   /** Functions*/
-  // check value is number
-  function isNumber(value) {
-    if ( !isNaN(value) && value !== null ) {
-      console.log(parseInt(value));
+   function getKeys( { target } ) {
+    if (target.classList.contains("number")) {
+      console.log(target.dataset.key);
+      return target.dataset.key;
+    }
+    else if (target.classList.contains("operator")) {
+      console.log(target.dataset.operator);
+      return target.dataset.operator;
+    }
+    else if (target.classList.contains("action")) {
+      console.log(target.dataset.action);
+      return target.dataset.action;
     }
   }
 
-  // check operator
-  function isOperator(value) {
-    if ( isNaN(value) && value !== null && value !== undefined ) {
-      console.log(value);
-    }
-  }
+  // нужна функция создающая объект с параметрами
+  // по умолчанию параметры null
 
-  function isAction(value) {
-    if ( isNaN(value) && value !== null && value !== undefined ) {
-      console.log(value);
-    }
-  }
-
-  // get key value
-  function getKeys( { target } ) {
-    if (target.closest(".key")) {
-      const keyValue = target.dataset.key;
-      isNumber(keyValue);
-    }
+  function calculateValue() {
+    let res = 0;
     
-    if (target.closest(".operator")) {
-      const keyValue = target.dataset.key;
-      isOperator(keyValue);
+    return function(num, oper) {
+        if (oper === '+') {
+            res += num;
+            console.log(res);
+            return res;
+        }
+        else if (oper === '-') {
+            res -= num;
+            console.log(res);
+            return res;
+        }
+        else if (oper === '*') {
+            res *= num;
+            console.log(res);
+            return res;
+        }
+        else if (oper === '/') {
+            res /= num;
+            console.log(res);
+            return res;
+        }
     }
 
-    if (target.closest(".action")) {
-      const keyValue = target.dataset.key;
-      isAction(keyValue);
+    function getResults() {
+      // получаем объект и проверяем значение, крутим по циклу
+      // пока не будет два аргумента
     }
-  }
+}
+  
 })();

@@ -203,14 +203,14 @@ const tasks = [
     // 30 если элемент является кнопкой удаления
     if (target.classList.contains("delete-btn")) {
     // 32 определяем родителя кнопки delete для получения id таски для удаления
-    const parent = target.closest('[data-task-id]');
-    // 33 забираем id задачи
-    console.log(parent);
-    const id = parent.dataset.taskId;
-    // 35 вызываем функцию подтверждения удаления
-    const confirmed = deleteTask(id);
-    // 40 вызываем функцию удаления задачи
-    deleteTaskFromHtml(confirmed, parent);
+      const parent = target.closest('[data-task-id]');
+      // 33 забираем id задачи
+      console.log(parent);
+      const id = parent.dataset.taskId;
+      // 35 вызываем функцию подтверждения удаления
+      const confirmed = deleteTask(id);
+      // 40 вызываем функцию удаления задачи
+      deleteTaskFromHtml(confirmed, parent);
     }
   }
 
