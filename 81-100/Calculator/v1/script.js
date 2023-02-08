@@ -2,28 +2,49 @@
 
   /** Elements UI*/
   const keysList = document.querySelector(".keys");
+  const output = document.querySelector(".output");
 
   /** Events*/
-  keysList.addEventListener("click", getKeys);
+  keysList.addEventListener("click", getResults);
 
   /** Functions*/
-   function getKeys( { target } ) {
-    if (target.classList.contains("number")) {
-      console.log(target.dataset.key);
-      return target.dataset.key;
+   function getKeys( el ) {
+    let numbValue = ''
+    let operValue = '+';
+    let actionValue = '';
+    if (el.classList.contains("number")) {
+      numbValue = el.dataset.key;
+      // console.log(numbValue);
     }
-    else if (target.classList.contains("operator")) {
-      console.log(target.dataset.operator);
-      return target.dataset.operator;
+    else if (el.classList.contains("operator")) {
+      operValue = el.dataset.operator;
+      // console.log(operValue);
     }
-    else if (target.classList.contains("action")) {
-      console.log(target.dataset.action);
-      return target.dataset.action;
+    else if (el.classList.contains("action")) {
+      actionValue = el.dataset.action
+      // console.log(actionValue);
     }
+
+    const result = createNewCalcParams(numbValue, operValue, actionValue);
+    // console.log(result);
+    return result;
   }
 
-  // нужна функция создающая объект с параметрами
-  // по умолчанию параметры null
+  function printValue(val) {
+    const result = output.textContent = val;
+    console.log(result);
+    return result;
+  }
+
+  function createNewCalcParams(number = '', operator = '', action = '') {
+    newParams = {
+      number,
+      operator,
+      action
+    }
+
+    return { ...newParams };
+  }
 
   function calculateValue() {
     let res = 0;
@@ -49,12 +70,15 @@
             console.log(res);
             return res;
         }
-    }
+    }  
+  }
 
-    function getResults() {
-      // получаем объект и проверяем значение, крутим по циклу
-      // пока не будет два аргумента
-    }
-}
-  
+  let result = calculateValue();
+
+  function getResults( { target } ) {
+    const params = getKeys(target);
+    const { number, operator, action } = params;
+    let a = parseInt(number);
+    printValue(result(a, `${operator}`));
+  }
 })();
