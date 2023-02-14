@@ -54,16 +54,20 @@ const tbody = document.createElement("tbody");
 const tfoot = document.createElement("tfoot");
 
 const tr = document.createElement("tr");
-const th = document.createElement("th");
+let th = document.createElement("th");
 const td = document.createElement("td");
+const thList = [];
 
-heads.forEach((headName) => {
-  th.textContent = headName;
-  console.log(headName);
-  tr.insertAdjacentElement("afterbegin", th);
-  thead.appendChild(tr);
-  table.appendChild(thead);
-})
+// heads.forEach((headName) => {
+//   th.textContent = headName;
+//   thList.push(th);
+// })
+
+for ( let i = 0; i < heads.length; i++) {
+  thList.push(th.textContent = heads[i]);
+}
+
+console.log(thList);
 
 
 fragment.appendChild(table);
