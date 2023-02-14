@@ -41,37 +41,38 @@ const users = [
 ];
 
 const heads = ['#','Name','Email','Balance'];
+const simpleRow = [1,'Buckner Osborne','bucknerosborne@empirica.com',2853.33]
 
 const container = document.querySelector(".container");
-
-const fragment = document.createDocumentFragment();
-
-const simpleText = "Lorem";
-
 const table = document.createElement("table");
-const thead = document.createElement("thead");
-const tbody = document.createElement("tbody");
-const tfoot = document.createElement("tfoot");
 
-const tr = document.createElement("tr");
-let th = document.createElement("th");
-const td = document.createElement("td");
-const thList = [];
+// row template
+function createRow(arr, el) {
+  let fragment = document.createDocumentFragment();
 
-// heads.forEach((headName) => {
-//   th.textContent = headName;
-//   thList.push(th);
-// })
+  for ( const data of arr ) {
+    const elem = document.createElement(el);
+    elem.textContent = data;
+    fragment.append(elem);
+  }
 
-for ( let i = 0; i < heads.length; i++) {
-  thList.push(th.textContent = heads[i]);
+  return fragment;
 }
 
-console.log(thList);
+// Table section tempalte
+function createTableSection(arr, child, parent) {
+  const tr = document.createElement("tr");
+  const parentElement = document.createElement(parent);
+  tr.append(createRow(arr, child));
+  parentElement.append(tr);
+
+  return parentElement;
+}
 
 
-fragment.appendChild(table);
+table.append(createTableSection(heads, "th", "thead"), createTableSection(simpleRow, "td", "tbody"));
 
-container.appendChild(fragment);
+container.insertAdjacentElement("beforeend", table);
+
 
 
