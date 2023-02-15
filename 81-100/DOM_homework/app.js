@@ -40,20 +40,32 @@ const users = [
   }
 ];
 
-const heads = ['#','Name','Email','Balance'];
-const simpleRow = [1,'Buckner Osborne','bucknerosborne@empirica.com',2853.33]
-
+/* UI */
+const tableHeader = ['#','Name','Email','Balance'];
 const container = document.querySelector(".container");
 const table = document.createElement("table");
 
+
+/* Functions */
+// get searched user data
 function getUserData(obj) {
-  const userData = Object.assign(obj);
-
+  const usersData = Object.assign(obj);
+  let data = [];
   
-  console.log(userData);
+  for (let j = 0; j < usersData.length; j++) {
+    let {id = j + 1, balance, name, email} = usersData[j];
+    let user = {
+      "userId": id,
+      "userName": name,
+      "userEmail": email,
+      "userBalance": balance
+    }
+    data.push(user);
+  }
+  
+  console.log(data);
+  return data;
 }
-
-getUserData(users);
 
 // row template
 function createRow(arr, el) {
@@ -78,8 +90,47 @@ function createTableSection(arr, child, parent) {
   return parentElement;
 }
 
+// create footer table tempalate
+function createTableFooter(child, parent, data) {
+  const tr = document.createElement("tr");
+  const parentElement = document.createElement(parent);
 
-table.append(createTableSection(heads, "th", "thead"), createTableSection(simpleRow, "td", "tbody"));
+  for ( let j = 0; j < 2; j++) { 
+    const childElem = document.createElement(child);
+    if(j === 0) {
+      childElem.setAttribute("colspan", "3");
+      tr.append(childElem)
+    }
+    else {
+      childElem.textContent = data;
+      tr.append(childElem);
+    }
+  }
+
+  parentElement.append(tr);
+  return parentElement;
+}
+
+// get sum of balance
+
+
+
+
+// create table
+function createTable(obj) {
+  table.append(createTableSection(tableHeader, "th", "thead"));
+
+  const users = Object.assign(obj);
+  for ( const user of users) {
+    table.append(createTableSection(Object.values(user), "td", "tbody"));
+
+    console.log(Object.values(user));
+  }
+
+  table.append(createTableFooter("td", "tfoot", "Total balance: 7141.53"));
+}
+
+createTable(getUserData(users));
 
 container.insertAdjacentElement("beforeend", table);
 
