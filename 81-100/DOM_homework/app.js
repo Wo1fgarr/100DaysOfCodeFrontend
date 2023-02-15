@@ -46,6 +46,15 @@ const simpleRow = [1,'Buckner Osborne','bucknerosborne@empirica.com',2853.33]
 const container = document.querySelector(".container");
 const table = document.createElement("table");
 
+function getUserData(obj) {
+  const userData = Object.assign(obj);
+
+  
+  console.log(userData);
+}
+
+getUserData(users);
+
 // row template
 function createRow(arr, el) {
   let fragment = document.createDocumentFragment();
