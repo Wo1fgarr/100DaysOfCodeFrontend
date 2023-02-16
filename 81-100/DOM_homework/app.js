@@ -114,33 +114,31 @@ function createTableFooter(child, parent, data) {
 // get sum of balance
 function getSumBalance(obj) {
   const userData = Object.assign(obj);
-  
+  let sum = 0;
+
   for ( const value of userData) {
-    
+    const {balance} = value;
+    sum += balance;
   }
 
-  const sumOfBalance = userData.reduce( (sum, [{balance}]) => sum + balance);
-  console.log(sumOfBalance);
+  console.log(sum);
+  return sum;
 }
-
-getSumBalance(users);
 
 // create table
 function createTable(obj) {
   table.append(createTableSection(tableHeader, "th", "thead"));
 
-  const users = Object.assign(obj);
-  for ( const user of users) {
+  const usersData = Object.assign(obj);
+  for ( const user of usersData) {
     table.append(createTableSection(Object.values(user), "td", "tbody"));
-
     console.log(Object.values(user));
   }
 
-  table.append(createTableFooter("td", "tfoot", "Total balance: 7141.53"));
+  table.append(createTableFooter("td", "tfoot", `Total balance: ${getSumBalance(users)}`));
 }
 
 createTable(getUserData(users));
-
 container.insertAdjacentElement("beforeend", table);
 
 
