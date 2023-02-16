@@ -112,9 +112,18 @@ function createTableFooter(child, parent, data) {
 }
 
 // get sum of balance
+function getSumBalance(obj) {
+  const userData = Object.assign(obj);
+  
+  for ( const value of userData) {
+    
+  }
 
+  const sumOfBalance = userData.reduce( (sum, [{balance}]) => sum + balance);
+  console.log(sumOfBalance);
+}
 
-
+getSumBalance(users);
 
 // create table
 function createTable(obj) {
