@@ -1,0 +1,12 @@
+.row div:first-child {
+  background-color: #ff9999;
+}
+
+.row div:nth-child(2) {
+  background-color: #99CCFF;
+}
+
+.row div:last-child {
+  background-color: #00CC99;
+}
+

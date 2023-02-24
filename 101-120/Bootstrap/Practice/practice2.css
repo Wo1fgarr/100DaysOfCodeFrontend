@@ -1,0 +1,26 @@
+* {
+  color: #fff
+}
+
+.r-1 div:first-child {
+  background-color: #ff5656;
+}
+.r-1 div:last-child {
+  background-color: #bb9999;
+}
+
+.r-2 div:nth-child(odd) {
+  background-color: #aa3678;
+}
+
+.r-2 div:nth-child(even) {
+  background-color: #1e07ec;
+}
+
+.r-3 div:nth-child(odd) {
+  background-color: #d8c411;
+}
+
+.r-3 div:nth-child(even) {
+  background-color: #39d4cd;
+}
