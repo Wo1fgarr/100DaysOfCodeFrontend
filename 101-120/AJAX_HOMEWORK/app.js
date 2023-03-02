@@ -4,6 +4,7 @@ const inputs = document.getElementsByTagName("input");
 const button = document.querySelector("button");
 const form = document.querySelector("form");
 
+
 /* Events */
 form.addEventListener('mouseover', e => {
   if (isAllInputsComplete() === true) {
@@ -16,9 +17,32 @@ form.addEventListener('mouseover', e => {
 });
 
 button.addEventListener("click", e => {
+  let name = '';
+      email = '',
+      phone = '',
+      website = '';
+
+  for(let i = 0; i < inputs.length; i++) {
+        if (inputs[i].classList.contains("user-name")) {
+          name = inputs[i].value;
+        }
+        else if (inputs[i].classList.contains("user-email")) {
+          email = inputs[i].value;
+        }
+        else if (inputs[i].classList.contains("user-phone")) {
+          phone = inputs[i].value;
+        }
+        else if (inputs[i].classList.contains("user-website")) {
+          website = inputs[i].value;
+        }
+  }
   const newPost = {
-    title: 'foo',
-    body: 'bar',
+    title: name,
+    body: {
+      userEmail: email,
+      userPhone: phone,
+      userWebsite: website
+    },
     userId: 1,
   };
 
@@ -28,22 +52,30 @@ button.addEventListener("click", e => {
   })
 });
 
-/* Function */
+
 function cardTemplate(post) {
+  const { body: {userEmail, userPhone, userWebsite} } = post;
+
   const card = document.createElement('div');
   card.classList.add('mt-3');
   card.classList.add('card');
-  const cardBody = document.createElement('div');
-  cardBody.classList.add('card-body');
-  const title = document.createElement('h5');
-  title.classList.add('card-title');
-  title.textContent = post.title;
-  const article = document.createElement('p');
-  article.classList.add('card-text');
-  article.textContent = post.body;
-  cardBody.appendChild(title);
-  cardBody.appendChild(article);
-  card.appendChild(cardBody);
+  const cardHeader = document.createElement('div');
+  cardHeader.classList.add('card-header')
+  cardHeader.textContent = post.title
+  const cardBody = document.createElement('ul');
+  cardBody.classList.add('list-group','list-group-flush');
+  const cardEmail = document.createElement('li');
+  cardEmail.classList.add('list-group-item');
+  cardEmail.textContent = userEmail;
+  const cardPhone = document.createElement('li');
+  cardPhone.classList.add('list-group-item');
+  cardPhone.textContent = userPhone;
+  const cardWebsite = document.createElement('li');
+  cardWebsite.classList.add('list-group-item');
+  cardWebsite.textContent = userWebsite;
+
+  cardBody.append(cardEmail, cardPhone, cardWebsite);
+  card.append(cardHeader, cardBody);
 
   return card;
 }
@@ -60,7 +92,7 @@ function renderPosts(response) {
 // get data from jsonplaceholder
 function getPost(cb) {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://jsonplaceholder.typicode.com/posts");
+  xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
 
   xhr.addEventListener("load", () => {
     const response = JSON.parse(xhr.responseText);
@@ -77,7 +109,7 @@ function getPost(cb) {
 // post data on jsonplaceholder
 function createPost(body, cb) {
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://jsonplaceholder.typicode.com/posts");
+  xhr.open("POST", "https://jsonplaceholder.typicode.com/users");
   xhr.addEventListener("load", () => {
     const response = JSON.parse(xhr.responseText);
     cb(response);
@@ -90,6 +122,18 @@ function createPost(body, cb) {
   });
 
   xhr.send(JSON.stringify(body));
+}
+
+
+// check inputs value
+function isAllInputsComplete() {
+  const arr = inputsValue();
+
+  const result = arr.every((element) => {
+    return element.length > 0;
+  })
+
+  return result;
 }
 
 
@@ -110,6 +154,16 @@ function changeColorInputs() {
   });
 }
 
+function inputsValue() {
+  const valueArr = [];
+  
+  for(let i = 0; i < inputs.length; i++) {
+    valueArr.push(inputs[i].value);
+  }
+
+  return valueArr;
+}
+
 function findEmptyInput() {
   const emptyInputsClassName = [];
 
@@ -123,41 +177,7 @@ function findEmptyInput() {
   return emptyInputsClassName;
 }
 
-function printUserData(data) {
-  for(let i = 0; i < inputs.length; i++) {
-    if (inputs[i].classList.contains("user-name")) {
-      inputs[i].value = data.name;
-    }
-    else if (inputs[i].classList.contains("user-email")) {
-      inputs[i].value = data.email;
-    }
-    else if (inputs[i].classList.contains("user-phone")) {
-      inputs[i].value = data.phone;
-    }
-    else if (inputs[i].classList.contains("user-website")) {
-      inputs[i].value = data.website;
-    }
-  }
-}
 
-// check inputs value
-function isAllInputsComplete() {
-  const arr = inputsValue();
 
-  const result = arr.every((element) => {
-    return element.length > 0;
-  })
 
-  return result;
-}
-
-function inputsValue() {
-  const valueArr = [];
-  
-  for(let i = 0; i < inputs.length; i++) {
-    valueArr.push(inputs[i].value);
-  }
-
-  return valueArr;
-}
 
