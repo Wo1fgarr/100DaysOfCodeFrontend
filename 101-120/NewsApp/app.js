@@ -61,9 +61,9 @@ const newsService = (function() {
   const apiUrl = 'http://newsapi.org/v2';
 
   return {
-    topHeadlines(country = 'us', cb) {
+    topHeadlines(country = 'us', category, cb) {
       http.get(
-        `${apiUrl}/top-headlines?country=${country}&category=technology`, 
+        `${apiUrl}/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`, 
         cb
       );
     },
@@ -80,6 +80,7 @@ const newsService = (function() {
 const form = document.forms['newsControls'];
 const countrySelect = form.elements['country'];
 const searchInput = form.elements['search'];
+const categorySelect = form.elements['category'];
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -99,9 +100,10 @@ function loadNews() {
 
   const country = countrySelect.value;
   const searchText = searchInput.value;
+  const category = categorySelect.value;
 
   if (!searchText) {
-    newsService.topHeadlines(country, onGetResponse);
+    newsService.topHeadlines(country, category, onGetResponse);
   } else {
     newsService.everything(searchText, onGetResponse);
   }
@@ -128,6 +130,7 @@ function onGetResponse(err, res) {
 
 // Function render news
 function renderNews(news) {
+  console.log(news);
   const newsContainer = document.querySelector('.news-container .row');
   if (newsContainer.children.length) {
     clearContainer(newsContainer);
@@ -151,8 +154,13 @@ function clearContainer(container) {
   }
 }
 
+const defaultNewsImg = './img/news.jpg';
+
 // newsItem template function
 function newsTemplate({ urlToImage, title, url, description }) {
+  if (urlToImage === null) {
+    urlToImage = defaultNewsImg;
+  }
   return `
     <div class="col s12">
       <div class="card">
