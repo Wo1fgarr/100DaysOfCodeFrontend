@@ -1,0 +1,21 @@
+.el-border {
+  border: 2px solid red;
+  padding: 10px;
+
+}
+
+.el-border:not(:first-child) {
+  margin-top: 40px;
+}
+
+.btn .btn_ {
+  margin: 10px;
+}
+
+.animate-me {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 15px;
+}
