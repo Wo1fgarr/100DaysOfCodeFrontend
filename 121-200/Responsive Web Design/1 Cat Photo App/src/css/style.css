@@ -1,4 +1,49 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  font-family: "Roboto-Regular";
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 0, 0.3),
+    rgba(0, 0, 255, 0.3)
+  ), url("../img/cat-paw2.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  padding: 30px;
+  background-color: rgba(201, 153, 75, 0.7);
+}
+
+main {
+  margin: 0;
+  padding: 30px;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto-Bold";
+}
+
+form {
+  width: 75%;
+}
